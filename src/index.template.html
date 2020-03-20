@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Validacion de Documentos UTEC</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar bg-primary">
+        <div class="container">
+            <a href="#inicio" class="navbar-brand"><img src="img/utec_logo.png" width="100px" alt="Logo Posgrado UTEC" /></a>
+
+            <a class="nav-link page-scroll text-white" href="#inicio">Cerrar Sesión</a>
+        </div>
+    </nav>
+
+    <!-- Table -->
+    <div class="container" id="principal">
+        <h1 class="text-center mb-4">
+            Documentos <span class="text-primary">UTEC</span>
+        </h1>
+        <input disabled class="h3 btn btn-default text-dark" type="text" id="usuario_utec" placeholder="" value="usuario@utec.edu.pe">
+        <!-- Tabla con datos dinamicos -->
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col" class="text-center">N°</th>
+                    <th scope="col">Documento</th>
+                    <th scope="col" class="text-center">Leído</th>
+                </tr>
+            </thead>
+            <tbody id="tbodyReglamentos">
+
+            </tbody>
+        </table>
+
+        <button class="btn btn-primary">
+            Guardar Cambios
+        </button>
+    </div>
+
+    <!-- Contacto de Emergencia -->
+    <div class="container mt-4">
+        <a href="#" data-toggle="modal" data-target="#modal-formulario">Información de Contacto de Emergencia</a>
+    </div>
+
+    <!-- Modals -->
+    <div class="modal fade" id="documento1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">
+                        Reglamento Academico
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal-body-doc1">
+                    <!-- Todo el documento transformado en HTML -->
+                    <div id="agreement1">
+                        <div>
+                            <p class="text-center">
+                                <img width="239" height="113" src="img/procedimiento_de_respuesta_ante_accidentes_logo.png" />
+                            </p>
+                            <p>
+                                <strong>PROCEDIMIENTO DE RESPUESTA ANTE ACCIDENTES</strong>
+                            </p>
+                            <table cellpadding="0" cellspacing="0" align="left">
+                                <tbody>
+                                    <tr>
+                                        <td width="117" height="0">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                        </td>
+                                        <td class="text-center img-fluid">
+                                            <img width="567" height="570" src="img/procedimiento_de_respuesta_ante_accidentes.png" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br clear="ALL" />
+                            <strong></strong>
+                        </div>
+                        <br clear="all" />
+                        <div>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                <strong>1. </strong>
+                                <strong><u>OBJETIVO</u></strong>
+                            </p>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                Asegurar una atención médica efectiva y eficaz con el fin de minimizar las consecuencias de emergencias con lesión personal a todos los colaboradores, alumnos, visitantes.
+                            </p>
+                            <p>
+                                <strong>2. </strong>
+                                <strong><u>ALCANCE</u></strong>
+                            </p>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                A toda la comunidad universitaria, contratistas y visitantes.
+                            </p>
+                            <p>
+                                <strong>3. </strong>
+                                <strong><u>REFERENCIAS</u></strong>
+                            </p>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                § Reglamento Interno de seguridad y salud en el trabajo de UTEC.
+                            </p>
+                            <p>
+                                § Norma G.050: Seguridad durante la construcción.
+                            </p>
+                            <p>
+                                § Ley N° 29783, Ley de Seguridad y Salud en el Trabajo.
+                            </p>
+                            <p>
+                                § D.S. N° 005-2012-TR: Reglamento de la Ley N° 29783, Ley de Seguridad y Salud en el Trabajo.
+                            </p>
+                            <p>
+                                § Ley N° 26790 “Ley de la Modernización de la Seguridad Social”
+                            </p>
+                            <p>
+                                § Ley 18846 “Ley de Accidentes de trabajo y Enfermedades Profesionales”
+                            </p>
+                            <p>
+                                § D.S 032-89-TR “Reglamento de Ley de Accidentes de trabajo y Enfermedades Profesionales”
+                            </p>
+                            <p>
+                                <strong>4. </strong>
+                                <strong><u>RESPONSABILIDADES</u></strong>
+                            </p>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                <strong>4.1. </strong>
+                                <strong>Directores, Gerentes, Jefes:</strong>
+                            </p>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                § Asegurar el cumplimiento de lo dispuesto en el presente documento.
+                            </p>
+                            <h1>
+                                4.2. Responsable de Seguridad y Salud en el Trabajo:
+                            </h1>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                § Analizar la condición del escenario presentado a fin de determinar las soluciones pertinentes para la protección de las personas.
+                            </p>
+                            <h1>
+                                4.3. Brigadas de emergencia, personal de seguridad:
+                            </h1>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                § Participar en las labores de atención de primeros auxilios.
+                            </p>
+                            <h1>
+                                4.4. Centro de control:
+                            </h1>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                § Recabar y anotar toda la información de la emergencia.
+                            </p>
+                            <p>
+                                § Realizar las comunicaciones oportunamente durante la emergencia.
+                            </p>
+                            <h1>
+                                4.5. Médico de tópico:
+                            </h1>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                § Brindar la atención médica de heridos durante la emergencia.
+                            </p>
+                            <p>
+                                § Coordinar el traslado de heridos al centro hospitalario más cercano.
+                            </p>
+                            <h1>
+                                4.6. Comunidad universitaria, contratistas y visitantes:
+                            </h1>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                § Cumplir con lo dispuesto en el presente documento.
+                            </p>
+                        </div>
+                        <br clear="all" />
+                        <div>
+                            <p>
+                                <strong>5. </strong>
+                                <strong><u>DEFINICIONES</u></strong>
+                            </p>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                § <strong>Comunidad universitaria: </strong>Grupo de personas integrada por alumnos, docentes y administrativos.
+                            </p>
+                            <p>
+                                § <strong>Accidente de trabajo: </strong>Todo suceso repentino que sobrevenga por causa o con ocasión de trabajo y que produzca en el trabajador una lesión orgánica, una perturbación funcional, una invalidez o la muerte.
+                                Es también accidente de trabajo el que se produce durante la ejecución de órdenes del empleador, o durante la ejecución de una labor bajo su autoridad y aun fuera del lugar y horas de trabajo.
+                            </p>
+                            <p>
+                                Según su gravedad los accidentes de trabajo pueden ser:
+                            </p>
+                            <p>
+                                <strong>a) </strong>
+                                <strong>Accidente Leve: </strong> Suceso cuya lesión, resultado de la evaluación médica, que genera en el accidentado un descanso breve con retorno máximo al día siguiente a sus labores habituales.
+                            </p>
+                            <p>
+                                <strong>b) </strong>
+                                <strong>Accidente Incapacitante: </strong> Suceso cuya lesión, resultado de la evaluación médica, da a lugar a descanso, ausencia justificada al trabajo y tratamiento. Según el grado de incapacidad los accidentes de trabajo
+                                pueden ser:
+                            </p>
+                            <p>
+                                - <strong>Total temporal: </strong>Cuando la lesión genera en el accidentado la imposibilidad de utilizar su organismo; se otorgará tratamiento médico hasta su plena recuperación.
+                            </p>
+                            <p>
+                                - <strong>Parcial Permanente: </strong>Cuando la lesión genera la pérdida parcial de un miembro u órgano de las funciones del mismo.
+                            </p>
+                            <p>
+                                - <strong>Total Permanente: </strong>Cuando la lesión genera la perdida anatómica o funcional total de un miembro u órgano, o de las funciones del mismo. Se considera a partir del dedo meñique.
+                            </p>
+                            <p>
+                                <strong>c) </strong>
+                                <strong>Accidente Mortal: </strong> Sucesos cuyas lesiones producen la muerte del trabajador.
+                            </p>
+                            <p>
+                                § <strong>Enfermedad profesional: </strong>Es una enfermedad contraída como resultado de la exposición a factores de riesgo relacionados al trabajo.
+                            </p>
+                            <p>
+                                § <strong>Emergencia: </strong>Evento o suceso grave que surge debido a factores naturales o como consecuencias de riesgos y procesos peligrosos en el trabajo que no fueron considerados en la gestión de seguridad y salud
+                                en el trabajo.
+                            </p>
+                            <p>
+                                § <strong>Incidente: </strong>Suceso acaecido en el transcurso del trabajo o en relación con el trabajo, en el que la persona afectada no sufre lesiones corporales o en el que estas solo requieren cuidados de primeros auxilios.
+                            </p>
+                            <p>
+                                § <strong>Incidente peligroso: </strong>Todo suceso potencialmente riesgoso que pudiera causar lesiones o enfermedades a las personas en su trabajo o a la población.
+                            </p>
+                            <p>
+                                § <strong>Primeros auxilios: </strong>Protocolos de atención de emergencia a una persona en el trabajo a una persona que ha sufrido un accidente o enfermedad ocupacional.
+                            </p>
+                            <p>
+                                § <strong>Áreas operativas actualmente empleadas: </strong>Utec Garage, laboratorios de ingeniería
+                            </p>
+                            <p>
+                                § <strong>Esguince: </strong>Es la separación momentánea de las superficies articulares con estiramiento de los ligamentos.
+                            </p>
+                            <p>
+                                § <strong>Luxación: </strong>desplazamiento de los huesos de una articulación.
+                            </p>
+                            <p>
+                                § <strong>Fractura: </strong>Rotura total o parcial de un hueso.
+                            </p>
+                        </div>
+                        <br clear="all" />
+                        <div>
+                            <p>
+                                <strong>6. </strong>
+                                <strong><u>GENERALIDADES</u></strong>
+                            </p>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                a) Ante un accidente se deberá activar la emergencia actuando de inmediato, empleando los siguientes medios:
+                            </p>
+                            <p>
+                                - Llamando al anexo 4120 (centro de control).
+                            </p>
+                            <p>
+                                - Comunicando al personal de seguridad.
+                            </p>
+                            <p>
+                                - Empleando la estación manual contra incendio.
+                            </p>
+                            <p>
+                                - A viva voz.
+                            </p>
+                            <p>
+                                b) También es muy importante informar correctamente, dando los datos necesarios sobre la emergencia. La persona que reporta debe de considerar los siguientes datos:
+                            </p>
+                            <p>
+                                - Nombre completo (identificarse).
+                            </p>
+                            <p>
+                                - Clasificar la emergencia o reportar el evento (indicar que pasa).
+                            </p>
+                            <p>
+                                - Lugar de la emergencia (explicar un punto de referencia).
+                            </p>
+                            <p>
+                                - Describir la escena del incidente (atención médica, incendio, corto circuito)
+                            </p>
+                            <p>
+                                - Reportar la presencia de heridos.
+                            </p>
+                            <p>
+                                c) Adicionalmente podrá considerar:
+                            </p>
+                            <p>
+                                - Solicitar recursos (brigadas, apoyo externo, etc.).
+                            </p>
+                            <p>
+                                - Capacidad de iluminación en el área (si es un ambiente cerrado o noche).
+                            </p>
+                            <p>
+                                - Vías de acceso (detallar por donde es mejor llegar a la emergencia).
+                            </p>
+                            <p>
+                                d) Para turnos nocturnos, el personal de seguridad atenderá de forma inmediata la emergencia y de ser necesario, a través del centro de control (anexo 4120) se coordinará el traslado del accidentado a una clínica o el arribo de la ambulancia.
+                            </p>
+                            <p>
+                                <strong>7. </strong>
+                                <strong><u>DESARROLLO</u></strong>
+                            </p>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                <strong>7.1. </strong>
+                                <strong>Accidentes con insumos químicos:</strong>
+                            </p>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                § <strong>Salpicadura de producto químico en los ojos</strong>
+                            </p>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                a) Si se trata de un insumo químico irritante o corrosivo es imprescindible irrigar el ojo con abundante agua durante al menos 15 minutos.
+                            </p>
+                            <p>
+                                b) Si se usan lentes de contacto (uso no permitido en el laboratorio), estos deben retirarse siempre que no se encuentren pegados a los ojos.
+                            </p>
+                            <p>
+                                c) Se deberá seguir las indicaciones de la hoja de seguridad (MSDS) del producto para el contacto con los ojos.
+                            </p>
+                            <h1>
+                                § Salpicaduras del producto químico en la piel
+                            </h1>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                a) Se procederá al lavado de la zona afectada con abundante agua.
+                            </p>
+                            <p>
+                                b) En el caso que el producto pueda ocasionar quemaduras, no se deberá quitar la prenda, ni emplear productos químicos sobre ella (ejemplo pasta dental, aceites).
+                            </p>
+                            <p>
+                                c) Se deberá seguir las indicaciones de la hoja de seguridad (MSDS) del producto para el contacto con la piel (en algunos casos pueda que no sea recomendado el uso de agua para el lavado).
+                            </p>
+                        </div>
+                        <br clear="all" />
+                        <div>
+                            <h1>
+                                § Exposición por inhalación
+                            </h1>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                a) Se suministrará en la medida de lo posible aire limpio y se mantendrá a la persona afectada en total reposo.
+                            </p>
+                            <p>
+                                b) Si la sustancia es irritante o corrosiva, pudiendo provocar problemas respiratorios graves, se colocará a la persona afectada semi incorporada.
+                            </p>
+                            <p>
+                                c) Se deberá seguir las indicaciones de la hoja de seguridad (MSDS) descritas para el producto para los casos de inhalación.
+                            </p>
+                            <h1>
+                                § Ingestión de producto químico
+                            </h1>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                Si la persona está consciente:
+                            </p>
+                            <p>
+                                a) Se deberá seguir las indicaciones de la hoja de seguridad (MSDS) en relación al producto ingerido.
+                            </p>
+                            <p>
+                                b) Provocar el vómito en el caso de productos tóxicos por ingestión.
+                            </p>
+                            <p>
+                                c) No provocar el vómito en el caso de sustancias corrosivas o volátiles.
+                            </p>
+                            <p>
+                                d) Enjuagar la boca con abundante agua.
+                            </p>
+                            <p>
+                                Si la personal no está consciente, contactar inmediatamente con el Centro de Control (anexo 4120).
+                            </p>
+                            <h1>
+                                § Derrames del producto químico
+                            </h1>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                a) Atender a las personas afectadas.
+                            </p>
+                            <p>
+                                b) Evaluar el alcance del derrame e identificar el producto vertido a fin de consultar su hoja de seguridad (MSDS).
+                            </p>
+                            <p>
+                                c) Controlar el derrame y limitar el número de personas en la zona afectada hasta normalizar la situación. Esta actividad, deberá realizarse de manera rápida, eficiente y apropiada para la neutralización, absorción y eliminación del vertido.
+                            </p>
+                            <p>
+                                d) Las labores de limpieza deberán realizarse con los equipos de protección adecuados, teniendo en cuenta el tipo de sustancia.
+                            </p>
+                            <p>
+                                e) Se procurará ventilar la zona afectada. Para conseguir una actuación rápida el material absorbente a utilizar deberá estar ubicado en un lugar de fácil acceso.
+                            </p>
+                            <p>
+                                f) Si el vertido es sólido, se procederá a recogerlo con cepillo y depositarlo en un contenedor de seguridad adecuado.
+                            </p>
+                            <p>
+                                g) En el caso que sea líquido, de forma general, previa consulta con la hoja de seguridad (MSDS) y no disponiendo de un método específico, se recomienda su absorción con absorbente de probada eficacia y continuación aplicarle el procedimiento de eliminación
+                                recomendado.
+                            </p>
+                            <h1>
+                                7.2. Otros tipos de accidentes:
+                            </h1>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                § <strong>Heridas</strong>
+                            </p>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                a) Lave la herida con abundante agua y jabón o suero fisiológico.
+                            </p>
+                            <p>
+                                b) Usar gasas limpias más antiséptico y limpiar la herida desde el centro hacia el exterior.
+                            </p>
+                            <p>
+                                c) Cubrir con gasa estéril y sujetar con esparadrapo.
+                            </p>
+                        </div>
+                        <br clear="all" />
+                        <div>
+                            <h1>
+                                § Hemorragias
+                            </h1>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                a) Coloque a la víctima en una posición cómoda.
+                            </p>
+                            <p>
+                                b) Emplear guantes quirúrgicos.
+                            </p>
+                            <p>
+                                c) Aplicar compresión directa con la mano o con un vendaje.
+                            </p>
+                            <p>
+                                d) Si la hemorragia continúa y la sangre se filtra a través de la gasa, no quite el vendaje, añada más material absorbente encima.
+                            </p>
+                            <p>
+                                e) Trate de levantar la zona afectada.
+                            </p>
+                            <h1>
+                                § Contusiones
+                            </h1>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                a) Determinar la gravedad de la contusión, discriminando la posibilidad de fractura para no movilizar el miembro o área afectada. Si la contusión es leve continuar con la atención.
+                            </p>
+                            <p>
+                                b) Aplicación de agentes fríos (compresas o hielo).
+                            </p>
+                            <p>
+                                c) Reposar la zona afectada.
+                            </p>
+                            <h1>
+                                § Quemaduras
+                            </h1>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                a) Aplique agua fría (no helada) sobre la lesión.
+                            </p>
+                            <p>
+                                b) No utilice cremas, pomadas ni remedios caseros.
+                            </p>
+                            <p>
+                                c) Si existen ampollas, no las reviente.
+                            </p>
+                            <p>
+                                d) Cubra el área con una gasa o tela limpia.
+                            </p>
+                            <h1>
+                                § Esguince, Luxación, Fractura
+                            </h1>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                a) No mover a la víctima si no es absolutamente necesario.
+                            </p>
+                            <p>
+                                b) Retirar inmediatamente relojes, anillos o pulseras.
+                            </p>
+                            <p>
+                                c) No tratar de mover el hueso roto.
+                            </p>
+                            <p>
+                                d) Si hay hemorragia cohibirla con presión indirecta y cubrir con gasa.
+                            </p>
+                            <p>
+                                e) Inmovilizar la fractura en la posición en que se encuentra.
+                            </p>
+                            <h1>
+                                § Desmayos
+                            </h1>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                a) Mantener ventilada y fresca a la víctima.
+                            </p>
+                            <p>
+                                b) Levantar las piernas y colocarlas sobre una superficie elevada.
+                            </p>
+                            <p>
+                                c) Si no puede tumbarse al suelo la sentaremos con la cabeza en las rodillas.
+                            </p>
+                            <p>
+                                d) Si hubiese vomitado, la colocaremos de costado para evitar que se ahogue.
+                            </p>
+                            <p>
+                                e) No proporcionarle líquidos ni alimentos.
+                            </p>
+                            <h1>
+                                § Atragantamiento
+                            </h1>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                a) Colocarse detrás de la víctima rodeándola con los brazos.
+                            </p>
+                            <p>
+                                b) Abrazar por detrás empuñando entre la boca del estómago y el abdomen.
+                            </p>
+                            <p>
+                                c) Realizar presiones hacia arriba en forma rápida y continua.
+                            </p>
+                            <p>
+                                (*) Si la víctima se encuentra sola deberá colocarse por detrás de una silla y hará presión sobre el respaldar de la misma agachándose hacia delante de forma rápida y continua.
+                            </p>
+                        </div>
+                        <br clear="all" />
+                        <div>
+                            <h1>
+                                § Convulsiones
+                            </h1>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                a) Voltear a la persona de lado para evitar que el vómito sea inhalado hacia los pulmones.
+                            </p>
+                            <p>
+                                b) Acompañe a la persona hasta que llegue la ayuda.
+                            </p>
+                            <p>
+                                c) Colocar un almohada o manta doblada bajo la cabeza para que no se lastime.
+                            </p>
+                            <p>
+                                d) Quitarle gafas, aflojare cinturón, corbatas y prendas que aprieten.
+                            </p>
+                            <p>
+                                e) Retirarle objetos punzantes.
+                            </p>
+                            <p>
+                                f) No introducir objetos en su boca ni intentar darle medicamentos orales.
+                            </p>
+                            <p>
+                                g) No sujetarlo con fuerza para evitar sus movimientos.
+                            </p>
+                            <h1>
+                                7.3. Traslado del accidentado:
+                            </h1>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                a) La coordinación del traslado del accidentado a un centro hospitalario estará a cargo del médico del tópico de acuerdo a sus procedimientos de atención. Asimismo, para los casos de accidentes de trabajadores deberá comunicar al área de RR.HH (anexo
+                                4612) y para los casos de alumnos al área de Servicios Educativos (anexo 4207).
+                            </p>
+                            <p>
+                                b) Todo personal accidentado evacuado a un centro hospitalario deberá portar su DNI y su formulario de solicitud de atención por accidente. Asimismo, deberá ser trasladado en una ambulancia que cuente obligatoriamente con un médico, así como también con
+                                algún representante de UTEC.
+                            </p>
+                            <p>
+                                c) Para los casos de contratistas se comunicará al responsable inmediato a fin de que realice las coordinaciones pertinentes de traslado de su trabajador a un centro hospitalario.
+                            </p>
+                            <h1>
+                                7.4. Accidentes graves o mortales:
+                            </h1>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                a) En caso de un accidente grave, se solicitará al presidente del Comité de Seguridad y Salud en el Trabajo de UTEC una reunión extraordinaria del Comité a fin de determinar las causas del accidente y establecer las medidas correctivas correspondientes.
+                            </p>
+                            <p>
+                                b) De acuerdo a la gravedad del accidente, se elaborará el informe final de investigación de accidentes que establecerá fechas para el cumplimiento de acciones correctivas, las cuales serán firmadas por el personal involucrado y responsables de las medidas
+                                correctivas.
+                            </p>
+                            <h1>
+                                7.5. Accidentes fuera de la instalación:
+                            </h1>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                a) Los accidentes de trabajo fuera de la instalación se deberán comunicar al centro de control: (01) 230-5020 anexo 4120. Estos a su vez comunicarán inmediatamente la novedad a RR.HH (anexo 4612) o al número: 966252767.
+                            </p>
+                            <p>
+                                b) El trabajador afectado deberá dirigirse al centro de atención hospitalario asignado para ser atendido. De no ser posible, debe concurrir al establecimiento de salud más cercano del lugar del accidente para recibir atención correspondiente.
+                            </p>
+                            <p>
+                                c) Para casos de accidentes de tránsito, el trabajador afectado deberá atenderse en el centro hospitalario según la póliza SOAT del vehículo siniestrado.
+                            </p>
+                        </div>
+                        <br clear="all" />
+                        <h1>
+                            7.6. Exclusiones:
+                        </h1>
+                        <p>
+                            <strong></strong>
+                        </p>
+                        <p>
+                            No son considerados accidentes de trabajo, los siguientes sucesos:
+                        </p>
+                        <p>
+                            § Accidentes que se produzcan en el trayecto de ida y retorno al centro de trabajo, aunque el transporte sea realizado por cuenta de UTEC en vehículos propios contratados para tal efecto.
+                        </p>
+                        <p>
+                            § El que se produzca como consecuencia del incumplimiento del trabajador de una orden escrita específica impartida por UTEC.
+                        </p>
+                        <p>
+                            § Los que se produzcan como consecuencias del uso de sustancias alcohólicas o estupefacientes por parte del trabajador.
+                        </p>
+                        <p>
+                            § El provocado intencionalmente por el propio trabajador o por su participación en riñas y peleas u otra acción ilegal.
+                        </p>
+                        <p>
+                            § El que se produzca con ocasión de actividades recreativas, deportivas o culturales, aunque se produzcan dentro de la jornada laboral o en el centro de trabajo.
+                        </p>
+                        <p>
+                            § El que sobrevenga durante los permisos, licencias, vacaciones o cualquier otra forma de suspensión del contrato de trabajo.
+                        </p>
+                        <p>
+                            § Los que se produzcan por efecto de terremoto, maremoto, etc., o cualquier otra convulsión de la naturaleza.
+                        </p>
+                        <p>
+                            § Los que se produzcan en caso de guerra civil o internacional, declarada o no, dentro o fuera del Perú; motín conmoción contra el orden público o terrorismo.
+                        </p>
+                        <p>
+                            <strong>5. </strong>
+                            <strong><u>REGISTROS</u></strong>
+                        </p>
+                        <p>
+                            <strong></strong>
+                        </p>
+                        <p>
+                            Ninguno.
+                        </p>
+                        <p>
+                            <strong>6. </strong>
+                            <strong><u>CONTROL DE CAMBIOS</u></strong>
+                        </p>
+                        <p>
+                            <strong></strong>
+                        </p>
+                        <table border="1" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td width="104" valign="top">
+                                        <p>
+                                            <strong>Versión:</strong>
+                                        </p>
+                                    </td>
+                                    <td width="113" valign="top">
+                                        <p>
+                                            <strong>Fecha:</strong>
+                                        </p>
+                                    </td>
+                                    <td width="369" valign="top">
+                                        <p>
+                                            <strong>Descripción del cambio</strong>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="104" valign="top">
+                                        <p>
+                                            01
+                                        </p>
+                                    </td>
+                                    <td width="113" valign="top">
+                                        <p>
+                                            14/03/2019
+                                        </p>
+                                    </td>
+                                    <td width="369" valign="top">
+                                        <p>
+                                            Documento nuevo
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>
+                            <strong></strong>
+                        </p>
+                        <p>
+                            <strong>7. </strong>
+                            <strong><u>ANEXOS</u></strong>
+                        </p>
+                        <p>
+                            <strong></strong>
+                        </p>
+                        <p>
+                            Ninguno.
+                        </p>
+                    </div>
+                </div>
+                <label><input type="checkbox" id="conforme1" disabled
+                        aria-label="Checkbox for following text input" />Es necesario leer el documento por completo
+                    para dar conformidad,
+                    una vez finalizado por favor, marque la casilla y de click en
+                    Guardar</label>
+                <div class="modal-footer">
+                    <button id="btnGuardar1" type="button" class="btn btn-primary" disabled="disabled">
+                        Aceptar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------------------- Modal 2 ------------------------------------------------------------ -->
+    <div class="modal fade" id="documento2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Documento 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal-body-doc2">
+                    <div id="agreement2">
+
+                    </div>
+                </div>
+                <div>
+                    <label><input type="checkbox" id="conforme2" disabled
+                            aria-label="Checkbox for following text input" />Es necesario leer el documento por completo
+                        para dar
+                        conformidad, una vez finalizado por favor, marque la casilla y de
+                        click en Guardar</label>
+                </div>
+                <div class="modal-footer">
+                    <button id="btnGuardar2" type="button" class="btn btn-primary" disabled>
+                        Aceptar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formulario del Contacto de Emergencia-->
+
+    <div class="modal fade" id="modal-formulario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">
+                        Para finalizar rellena los campos con la información de tu contacto de emergencia por favor
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal-body-doc4">
+                    <form id="formulario">
+                        <div class="form-group">
+                            <label for="correo-utec">Correo UTEC</label>
+                            <input type="email" class="form-control" id="correo-utec" required placeholder="micorreo@utec.edu.pe" />
+                        </div>
+                        <div class="form-group">
+                            <label for="dni">Documento de Identidad</label>
+                            <input type="number" class="form-control" id="dni" maxlength="8" required placeholder="DNI 8 Digitos" />
+                        </div>
+                        <div class="form-group">
+                            <label for="fecha-hora">Fecha y hora</label>
+                            <input type="date" class="form-control" id="fecha-hora" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="nombres">Nombres</label>
+                            <input type="text" class="form-control" id="nombres" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="apellidos">Apellidos</label>
+                            <input type="text" class="form-control" id="apellidos" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="number" class="form-control" id="telefono" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="periodo">Periodo</label>
+                            <input type="text" class="form-control" id="periodo" value="2020-1" required />
+                        </div>
+                        <button id="btnGuardarTodo" type="submit" class="btn btn-primary">
+                            Enviar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
