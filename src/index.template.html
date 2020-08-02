@@ -1,0 +1,3197 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/main.css" />
+    <link rel='icon' href='public/img/favicon.png' type='image/x-icon' />
+
+    <title>Reglamentos de Seguridad UTEC</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar bg-primary">
+        <div class="container">
+            <a href="#inicio" class="navbar-brand"><img class="img-fluid" src="img/utec_logo.png" width="100px"
+                    alt="Logo Posgrado UTEC" /></a>
+            <div class="text-header text-right pt-3">
+                <p id="user_email"></p>
+            </div>
+            <a href="#" id="logoutButton" class="text-white">Cerrar Sesión</a>
+        </div>
+    </nav>
+
+    <!-- Titulo principal-->
+    <div class="container" id="principal">
+        <div>
+            <p class="text-secondary advertencia">*En caso de presentar problemas para leer los documentos y
+                confirmarlos, por favor ajustar el zoom de su navegador al
+                100% predeterminado y actualizar la pagina (F5)</p>
+        </div>
+        <div class="text-center">
+            <h2>Reglamentos de Seguridad <span class="text-primary">UTEC</span></h2>
+        </div>
+        <div class="pt-3">
+            <a class="text-secondary advertencia">*Es importante llenar esta información para contactar a alguien en
+                caso de una
+                emergencia.</a>
+            <p><a href="#" class="text-dark" data-toggle="modal" data-target="#modal-formulario">Información de Contacto
+                    de Emergencia</a>
+            </p>
+        </div>
+        <hr>
+        <!-- Tabla con datos dinamicos -->
+        <a class="text-secondary advertencia">*De click sobre cualquiera de los reglamentos para leerlos.</a>
+        <table id="tabla-principal" class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col" class="text-center text-header">N°</th>
+                    <th scope="col" class="text-header">Documento</th>
+                    <th scope="col" class="text-center text-header">Leído</th>
+                </tr>
+            </thead>
+            <!-- Cuerpo de la tabla -->
+            <tbody id="tbodyReglamentos">
+
+            </tbody>
+        </table>
+
+        <hr>
+    </div>
+
+
+
+    <footer>
+        <div class="text-center mt-5" style="padding-top: 81px;">
+            <p>&copy; Universidad de Ingenieria y Tecnología</p>
+        </div>
+    </footer>
+
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="documento1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-primary">
+                    <div class="modal-title text-white" id="exampleModalLongTitle">
+                        <h2>¡Importante!</h2>
+                        <p>Es necesario leer el documento por completo para dar conformidad, una vez finalizado, marque
+                            la casilla y de click en Guardar.</p>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal-body-doc1">
+                    <!-- Todo el documento transformado en HTML -->
+                    <div class="text-justify" id="agreement1">
+                        <div>
+                            <p class="text-center"> <img class="img-fluid" width="239" height="113"
+                                    src="img/logo_reglamentos.png" />
+                            </p>
+                            <p class="text-center"> <strong>PROCEDIMIENTO DE RESPUESTA ANTE ACCIDENTES</strong>
+                            </p>
+                            <div class="text-center"> <img class="img-fluid" width="567" height="570"
+                                    src="img/procedimiento_de_respuesta_ante_accidentes.png" />
+                            </div>
+                            <br clear="ALL" />
+                            <strong></strong>
+                        </div>
+                        <br clear="all" />
+                        <div>
+                            <p> <strong>1. </strong> <strong><u>OBJETIVO</u></strong>
+                            </p>
+                            <p> Asegurar una atención médica efectiva y eficaz con el fin de minimizar las consecuencias
+                                de emergencias con lesión personal a todos los colaboradores, alumnos, visitantes.
+                            </p>
+                            <p> <strong>2. </strong> <strong><u>ALCANCE</u></strong>
+                            </p>
+                            <p> A toda la comunidad universitaria, contratistas y visitantes.
+                            </p>
+                            <p> <strong>3. </strong> <strong><u>REFERENCIAS</u></strong>
+                            </p>
+                            <p> Reglamento Interno de seguridad y salud en el trabajo de UTEC.
+                            </p>
+                            <p> Norma G.050: Seguridad durante la construcción.
+                            </p>
+                            <p> Ley N° 29783, Ley de Seguridad y Salud en el Trabajo.
+                            </p>
+                            <p> D.S. N° 005-2012-TR: Reglamento de la Ley N° 29783, Ley de Seguridad y Salud en el
+                                Trabajo.
+                            </p>
+                            <p> Ley N° 26790 “Ley de la Modernización de la Seguridad Social”
+                            </p>
+                            <p> Ley 18846 “Ley de Accidentes de trabajo y Enfermedades Profesionales”
+                            </p>
+                            <p> D.S 032-89-TR “Reglamento de Ley de Accidentes de trabajo y Enfermedades Profesionales”
+                            </p>
+                            <p> <strong>4. </strong> <strong><u>RESPONSABILIDADES</u></strong>
+                            </p>
+                            <p> <strong>4.1. </strong> <strong>Directores, Gerentes, Jefes:</strong>
+                            </p>
+                            <p> Asegurar el cumplimiento de lo dispuesto en el presente documento.
+                            </p>
+                            <h1> 4.2. Responsable de Seguridad y Salud en el Trabajo:
+                            </h1>
+                            <p> Analizar la condición del escenario presentado a fin de determinar las soluciones
+                                pertinentes para la protección de las personas.
+                            </p>
+                            <h1> 4.3. Brigadas de emergencia, personal de seguridad:
+                            </h1>
+                            <p> Participar en las labores de atención de primeros auxilios.
+                            </p>
+                            <h1> 4.4. Centro de control:
+                            </h1>
+                            <p> Recabar y anotar toda la información de la emergencia.
+                            </p>
+                            <p> Realizar las comunicaciones oportunamente durante la emergencia.
+                            </p>
+                            <h1> 4.5. Médico de tópico:
+                            </h1>
+                            <p> Brindar la atención médica de heridos durante la emergencia.
+                            </p>
+                            <p> Coordinar el traslado de heridos al centro hospitalario más cercano.
+                            </p>
+                            <h1> 4.6. Comunidad universitaria, contratistas y visitantes:
+                            </h1>
+                            <p> Cumplir con lo dispuesto en el presente documento.
+                            </p>
+                        </div>
+                        <br clear="all" />
+                        <div>
+                            <p> <strong>5. </strong> <strong><u>DEFINICIONES</u></strong>
+                            </p>
+                            <p> <strong>Comunidad universitaria: </strong>Grupo de personas integrada por alumnos,
+                                docentes y administrativos.
+                            </p>
+                            <p> <strong>Accidente de trabajo: </strong>Todo suceso repentino que sobrevenga por causa o
+                                con ocasión de trabajo y que produzca en el trabajador una lesión orgánica, una
+                                perturbación funcional, una invalidez o la muerte. Es también
+                                accidente de trabajo el que se produce durante la ejecución de órdenes del empleador, o
+                                durante la ejecución de una labor bajo su autoridad y aun fuera del lugar y horas de
+                                trabajo.
+                            </p>
+                            <p> Según su gravedad los accidentes de trabajo pueden ser:
+                            </p>
+                            <p> <strong>a) </strong> <strong>Accidente Leve: </strong> Suceso cuya lesión, resultado de
+                                la evaluación médica, que genera en el accidentado un descanso breve con retorno máximo
+                                al día siguiente a sus labores habituales.
+                            </p>
+                            <p> <strong>b) </strong> <strong>Accidente Incapacitante: </strong> Suceso cuya lesión,
+                                resultado de la evaluación médica, da a lugar a descanso, ausencia justificada al
+                                trabajo y tratamiento. Según el grado de incapacidad los
+                                accidentes de trabajo pueden ser:
+                            </p>
+                            <p> - <strong>Total temporal: </strong>Cuando la lesión genera en el accidentado la
+                                imposibilidad de utilizar su organismo; se otorgará tratamiento médico hasta su plena
+                                recuperación.
+                            </p>
+                            <p> - <strong>Parcial Permanente: </strong>Cuando la lesión genera la pérdida parcial de un
+                                miembro u órgano de las funciones del mismo.
+                            </p>
+                            <p> - <strong>Total Permanente: </strong>Cuando la lesión genera la perdida anatómica o
+                                funcional total de un miembro u órgano, o de las funciones del mismo. Se considera a
+                                partir del dedo meñique.
+                            </p>
+                            <p> <strong>c) </strong> <strong>Accidente Mortal: </strong> Sucesos cuyas lesiones producen
+                                la muerte del trabajador.
+                            </p>
+                            <p> <strong>Enfermedad profesional: </strong>Es una enfermedad contraída como resultado de
+                                la exposición a factores de riesgo relacionados al trabajo.
+                            </p>
+                            <p> <strong>Emergencia: </strong>Evento o suceso grave que surge debido a factores naturales
+                                o como consecuencias de riesgos y procesos peligrosos en el trabajo que no fueron
+                                considerados en la gestión de seguridad y salud en el
+                                trabajo.
+                            </p>
+                            <p> <strong>Incidente: </strong>Suceso acaecido en el transcurso del trabajo o en relación
+                                con el trabajo, en el que la persona afectada no sufre lesiones corporales o en el que
+                                estas solo requieren cuidados de primeros auxilios.
+                            </p>
+                            <p> <strong>Incidente peligroso: </strong>Todo suceso potencialmente riesgoso que pudiera
+                                causar lesiones o enfermedades a las personas en su trabajo o a la población.
+                            </p>
+                            <p> <strong>Primeros auxilios: </strong>Protocolos de atención de emergencia a una persona
+                                en el trabajo a una persona que ha sufrido un accidente o enfermedad ocupacional.
+                            </p>
+                            <p> <strong>Áreas operativas actualmente empleadas: </strong>Utec Garage, laboratorios de
+                                ingeniería
+                            </p>
+                            <p> <strong>Esguince: </strong>Es la separación momentánea de las superficies articulares
+                                con estiramiento de los ligamentos.
+                            </p>
+                            <p> <strong>Luxación: </strong>desplazamiento de los huesos de una articulación.
+                            </p>
+                            <p> <strong>Fractura: </strong>Rotura total o parcial de un hueso.
+                            </p>
+                        </div>
+                        <br clear="all" />
+                        <div>
+                            <p> <strong>6. </strong> <strong><u>GENERALIDADES</u></strong>
+                            </p>
+                            <p> a) Ante un accidente se deberá activar la emergencia actuando de inmediato, empleando
+                                los siguientes medios:
+                            </p>
+                            <p> - Llamando al anexo 4120 (centro de control).
+                            </p>
+                            <p> - Comunicando al personal de seguridad.
+                            </p>
+                            <p> - Empleando la estación manual contra incendio.
+                            </p>
+                            <p> - A viva voz.
+                            </p>
+                            <p> b) También es muy importante informar correctamente, dando los datos necesarios sobre la
+                                emergencia. La persona que reporta debe de considerar los siguientes datos:
+                            </p>
+                            <p> - Nombre completo (identificarse).
+                            </p>
+                            <p> - Clasificar la emergencia o reportar el evento (indicar que pasa).
+                            </p>
+                            <p> - Lugar de la emergencia (explicar un punto de referencia).
+                            </p>
+                            <p> - Describir la escena del incidente (atención médica, incendio, corto circuito)
+                            </p>
+                            <p> - Reportar la presencia de heridos.
+                            </p>
+                            <p> c) Adicionalmente podrá considerar:
+                            </p>
+                            <p> - Solicitar recursos (brigadas, apoyo externo, etc.).
+                            </p>
+                            <p> - Capacidad de iluminación en el área (si es un ambiente cerrado o noche).
+                            </p>
+                            <p> - Vías de acceso (detallar por donde es mejor llegar a la emergencia).
+                            </p>
+                            <p> d) Para turnos nocturnos, el personal de seguridad atenderá de forma inmediata la
+                                emergencia y de ser necesario, a través del centro de control (anexo 4120) se coordinará
+                                el traslado del accidentado a una clínica o el arribo
+                                de la ambulancia.
+                            </p>
+                            <p> <strong>7. </strong> <strong><u>DESARROLLO</u></strong>
+                            </p>
+                            <p> <strong>7.1. </strong> <strong>Accidentes con insumos químicos:</strong>
+                            </p>
+                            <p> <strong>Salpicadura de producto químico en los ojos</strong>
+                            </p>
+                            <p> a) Si se trata de un insumo químico irritante o corrosivo es imprescindible irrigar el
+                                ojo con abundante agua durante al menos 15 minutos.
+                            </p>
+                            <p> b) Si se usan lentes de contacto (uso no permitido en el laboratorio), estos deben
+                                retirarse siempre que no se encuentren pegados a los ojos.
+                            </p>
+                            <p> c) Se deberá seguir las indicaciones de la hoja de seguridad (MSDS) del producto para el
+                                contacto con los ojos.
+                            </p>
+                            <h1> Salpicaduras del producto químico en la piel
+                            </h1>
+                            <p> a) Se procederá al lavado de la zona afectada con abundante agua.
+                            </p>
+                            <p> b) En el caso que el producto pueda ocasionar quemaduras, no se deberá quitar la prenda,
+                                ni emplear productos químicos sobre ella (ejemplo pasta dental, aceites).
+                            </p>
+                            <p> c) Se deberá seguir las indicaciones de la hoja de seguridad (MSDS) del producto para el
+                                contacto con la piel (en algunos casos pueda que no sea recomendado el uso de agua para
+                                el lavado).
+                            </p>
+                        </div>
+                        <br clear="all" />
+                        <div>
+                            <h1> Exposición por inhalación
+                            </h1>
+                            <p> a) Se suministrará en la medida de lo posible aire limpio y se mantendrá a la persona
+                                afectada en total reposo.
+                            </p>
+                            <p> b) Si la sustancia es irritante o corrosiva, pudiendo provocar problemas respiratorios
+                                graves, se colocará a la persona afectada semi incorporada.
+                            </p>
+                            <p> c) Se deberá seguir las indicaciones de la hoja de seguridad (MSDS) descritas para el
+                                producto para los casos de inhalación.
+                            </p>
+                            <h1> Ingestión de producto químico
+                            </h1>
+                            <p> Si la persona está consciente:
+                            </p>
+                            <p> a) Se deberá seguir las indicaciones de la hoja de seguridad (MSDS) en relación al
+                                producto ingerido.
+                            </p>
+                            <p> b) Provocar el vómito en el caso de productos tóxicos por ingestión.
+                            </p>
+                            <p> c) No provocar el vómito en el caso de sustancias corrosivas o volátiles.
+                            </p>
+                            <p> d) Enjuagar la boca con abundante agua.
+                            </p>
+                            <p> Si la personal no está consciente, contactar inmediatamente con el Centro de Control
+                                (anexo 4120).
+                            </p>
+                            <h1> Derrames del producto químico
+                            </h1>
+                            <p> a) Atender a las personas afectadas.
+                            </p>
+                            <p> b) Evaluar el alcance del derrame e identificar el producto vertido a fin de consultar
+                                su hoja de seguridad (MSDS).
+                            </p>
+                            <p> c) Controlar el derrame y limitar el número de personas en la zona afectada hasta
+                                normalizar la situación. Esta actividad, deberá realizarse de manera rápida, eficiente y
+                                apropiada para la neutralización, absorción y eliminación
+                                del vertido.
+                            </p>
+                            <p> d) Las labores de limpieza deberán realizarse con los equipos de protección adecuados,
+                                teniendo en cuenta el tipo de sustancia.
+                            </p>
+                            <p> e) Se procurará ventilar la zona afectada. Para conseguir una actuación rápida el
+                                material absorbente a utilizar deberá estar ubicado en un lugar de fácil acceso.
+                            </p>
+                            <p> f) Si el vertido es sólido, se procederá a recogerlo con cepillo y depositarlo en un
+                                contenedor de seguridad adecuado.
+                            </p>
+                            <p> g) En el caso que sea líquido, de forma general, previa consulta con la hoja de
+                                seguridad (MSDS) y no disponiendo de un método específico, se recomienda su absorción
+                                con absorbente de probada eficacia y continuación aplicarle
+                                el procedimiento de eliminación recomendado.
+                            </p>
+                            <h1> 7.2. Otros tipos de accidentes:
+                            </h1>
+                            <p> <strong>Heridas</strong>
+                            </p>
+                            <p> a) Lave la herida con abundante agua y jabón o suero fisiológico.
+                            </p>
+                            <p> b) Usar gasas limpias más antiséptico y limpiar la herida desde el centro hacia el
+                                exterior.
+                            </p>
+                            <p> c) Cubrir con gasa estéril y sujetar con esparadrapo.
+                            </p>
+                        </div>
+                        <br clear="all" />
+                        <div>
+                            <h1> Hemorragias
+                            </h1>
+                            <p> a) Coloque a la víctima en una posición cómoda.
+                            </p>
+                            <p> b) Emplear guantes quirúrgicos.
+                            </p>
+                            <p> c) Aplicar compresión directa con la mano o con un vendaje.
+                            </p>
+                            <p> d) Si la hemorragia continúa y la sangre se filtra a través de la gasa, no quite el
+                                vendaje, añada más material absorbente encima.
+                            </p>
+                            <p> e) Trate de levantar la zona afectada.
+                            </p>
+                            <h1> Contusiones
+                            </h1>
+                            <p> a) Determinar la gravedad de la contusión, discriminando la posibilidad de fractura para
+                                no movilizar el miembro o área afectada. Si la contusión es leve continuar con la
+                                atención.
+                            </p>
+                            <p> b) Aplicación de agentes fríos (compresas o hielo).
+                            </p>
+                            <p> c) Reposar la zona afectada.
+                            </p>
+                            <h1> Quemaduras
+                            </h1>
+                            <p> a) Aplique agua fría (no helada) sobre la lesión.
+                            </p>
+                            <p> b) No utilice cremas, pomadas ni remedios caseros.
+                            </p>
+                            <p> c) Si existen ampollas, no las reviente.
+                            </p>
+                            <p> d) Cubra el área con una gasa o tela limpia.
+                            </p>
+                            <h1> Esguince, Luxación, Fractura
+                            </h1>
+                            <p> a) No mover a la víctima si no es absolutamente necesario.
+                            </p>
+                            <p> b) Retirar inmediatamente relojes, anillos o pulseras.
+                            </p>
+                            <p> c) No tratar de mover el hueso roto.
+                            </p>
+                            <p> d) Si hay hemorragia cohibirla con presión indirecta y cubrir con gasa.
+                            </p>
+                            <p> e) Inmovilizar la fractura en la posición en que se encuentra.
+                            </p>
+                            <h1> Desmayos
+                            </h1>
+                            <p> a) Mantener ventilada y fresca a la víctima.
+                            </p>
+                            <p> b) Levantar las piernas y colocarlas sobre una superficie elevada.
+                            </p>
+                            <p> c) Si no puede tumbarse al suelo la sentaremos con la cabeza en las rodillas.
+                            </p>
+                            <p> d) Si hubiese vomitado, la colocaremos de costado para evitar que se ahogue.
+                            </p>
+                            <p> e) No proporcionarle líquidos ni alimentos.
+                            </p>
+                            <h1> Atragantamiento
+                            </h1>
+                            <p> a) Colocarse detrás de la víctima rodeándola con los brazos.
+                            </p>
+                            <p> b) Abrazar por detrás empuñando entre la boca del estómago y el abdomen.
+                            </p>
+                            <p> c) Realizar presiones hacia arriba en forma rápida y continua.
+                            </p>
+                            <p> (*) Si la víctima se encuentra sola deberá colocarse por detrás de una silla y hará
+                                presión sobre el respaldar de la misma agachándose hacia delante de forma rápida y
+                                continua.
+                            </p>
+                        </div>
+                        <br clear="all" />
+                        <div>
+                            <h1> Convulsiones
+                            </h1>
+                            <p> a) Voltear a la persona de lado para evitar que el vómito sea inhalado hacia los
+                                pulmones.
+                            </p>
+                            <p> b) Acompañe a la persona hasta que llegue la ayuda.
+                            </p>
+                            <p> c) Colocar un almohada o manta doblada bajo la cabeza para que no se lastime.
+                            </p>
+                            <p> d) Quitarle gafas, aflojare cinturón, corbatas y prendas que aprieten.
+                            </p>
+                            <p> e) Retirarle objetos punzantes.
+                            </p>
+                            <p> f) No introducir objetos en su boca ni intentar darle medicamentos orales.
+                            </p>
+                            <p> g) No sujetarlo con fuerza para evitar sus movimientos.
+                            </p>
+                            <h1> 7.3. Traslado del accidentado:
+                            </h1>
+                            <p> a) La coordinación del traslado del accidentado a un centro hospitalario estará a cargo
+                                del médico del tópico de acuerdo a sus procedimientos de atención. Asimismo, para los
+                                casos de accidentes de trabajadores deberá comunicar
+                                al área de RR.HH (anexo 4612) y para los casos de alumnos al área de Servicios
+                                Educativos (anexo 4207).
+                            </p>
+                            <p> b) Todo personal accidentado evacuado a un centro hospitalario deberá portar su DNI y su
+                                formulario de solicitud de atención por accidente. Asimismo, deberá ser trasladado en
+                                una ambulancia que cuente obligatoriamente con un
+                                médico, así como también con algún representante de UTEC.
+                            </p>
+                            <p> c) Para los casos de contratistas se comunicará al responsable inmediato a fin de que
+                                realice las coordinaciones pertinentes de traslado de su trabajador a un centro
+                                hospitalario.
+                            </p>
+                            <h1> 7.4. Accidentes graves o mortales:
+                            </h1>
+                            <p> a) En caso de un accidente grave, se solicitará al presidente del Comité de Seguridad y
+                                Salud en el Trabajo de UTEC una reunión extraordinaria del Comité a fin de determinar
+                                las causas del accidente y establecer las medidas
+                                correctivas correspondientes.
+                            </p>
+                            <p> b) De acuerdo a la gravedad del accidente, se elaborará el informe final de
+                                investigación de accidentes que establecerá fechas para el cumplimiento de acciones
+                                correctivas, las cuales serán firmadas por el personal involucrado
+                                y responsables de las medidas correctivas.
+                            </p>
+                            <h1> 7.5. Accidentes fuera de la instalación:
+                            </h1>
+                            <p> a) Los accidentes de trabajo fuera de la instalación se deberán comunicar al centro de
+                                control: (01) 230-5020 anexo 4120. Estos a su vez comunicarán inmediatamente la novedad
+                                a RR.HH (anexo 4612) o al número: 966252767.
+                            </p>
+                            <p> b) El trabajador afectado deberá dirigirse al centro de atención hospitalario asignado
+                                para ser atendido. De no ser posible, debe concurrir al establecimiento de salud más
+                                cercano del lugar del accidente para recibir atención
+                                correspondiente.
+                            </p>
+                            <p> c) Para casos de accidentes de tránsito, el trabajador afectado deberá atenderse en el
+                                centro hospitalario según la póliza SOAT del vehículo siniestrado.
+                            </p>
+                        </div>
+                        <br clear="all" />
+                        <h1>
+                            7.6. Exclusiones:
+                        </h1>
+                        <p>
+                            <strong></strong>
+                        </p>
+                        <p>
+                            No son considerados accidentes de trabajo, los siguientes sucesos:
+                        </p>
+                        <p>
+                            Accidentes que se produzcan en el trayecto de ida y retorno al centro de trabajo, aunque el
+                            transporte sea realizado por cuenta de UTEC en vehículos propios contratados para tal
+                            efecto.
+                        </p>
+                        <p>
+                            El que se produzca como consecuencia del incumplimiento del trabajador de una orden escrita
+                            específica impartida por UTEC.
+                        </p>
+                        <p>
+                            Los que se produzcan como consecuencias del uso de sustancias alcohólicas o estupefacientes
+                            por parte del trabajador.
+                        </p>
+                        <p>
+                            El provocado intencionalmente por el propio trabajador o por su participación en riñas y
+                            peleas u otra acción ilegal.
+                        </p>
+                        <p>
+                            El que se produzca con ocasión de actividades recreativas, deportivas o culturales, aunque
+                            se produzcan dentro de la jornada laboral o en el centro de trabajo.
+                        </p>
+                        <p>
+                            El que sobrevenga durante los permisos, licencias, vacaciones o cualquier otra forma de
+                            suspensión del contrato de trabajo.
+                        </p>
+                        <p>
+                            Los que se produzcan por efecto de terremoto, maremoto, etc., o cualquier otra convulsión de
+                            la naturaleza.
+                        </p>
+                        <p>
+                            Los que se produzcan en caso de guerra civil o internacional, declarada o no, dentro o fuera
+                            del Perú; motín conmoción contra el orden público o terrorismo.
+                        </p>
+                        <p>
+                            <strong>5. </strong>
+                            <strong><u>REGISTROS</u></strong>
+                        </p>
+                        <p>
+                            <strong></strong>
+                        </p>
+                        <p>
+                            Ninguno.
+                        </p>
+                        <p>
+                            <strong>6. </strong>
+                            <strong><u>CONTROL DE CAMBIOS</u></strong>
+                        </p>
+                        <p>
+                            <strong></strong>
+                        </p>
+                        <table border="1" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td width="104" valign="top">
+                                        <p> <strong>Versión:</strong> </p>
+                                    </td>
+                                    <td width="113" valign="top">
+                                        <p> <strong>Fecha:</strong> </p>
+                                    </td>
+                                    <td width="369" valign="top">
+                                        <p> <strong>Descripción del cambio</strong> </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="104" valign="top">
+                                        <p> 01 </p>
+                                    </td>
+                                    <td width="113" valign="top">
+                                        <p> 14/03/2019 </p>
+                                    </td>
+                                    <td width="369" valign="top">
+                                        <p> Documento nuevo </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>
+                            <strong></strong>
+                        </p>
+                        <p>
+                            <strong>7. </strong>
+                            <strong><u>ANEXOS</u></strong>
+                        </p>
+                        <p>
+                            <strong></strong>
+                        </p>
+                        <p>
+                            Ninguno.
+                        </p>
+                    </div>
+                </div>
+                <div class="pie-modal bg-dark text-white">
+                    <div class="row">
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-sx-9">
+                            <label><input type="checkbox" id="conforme1" disabled /> He leído y acepto los términos y
+                                condiciones descritos en el presente reglamento</label>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-sx-3 text-center">
+                            <button id="btnGuardar1" type="button" class="btn btn-light" disabled>Guardar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="documento2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-primary">
+                    <div class="modal-title text-white" id="exampleModalLongTitle">
+                        <h2>¡Importante!</h2>
+                        <p class="h5">Es necesario leer el documento por completo para dar conformidad, una vez
+                            finalizado, marque la casilla y de click en Guardar.</p>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal-body-doc2">
+                    <!-- Todo el documento transformado en HTML -->
+                    <div class="text-justify" id="agreement2">
+                        <div>
+                            <p class="text-center"> <img class="img-fluid" width="239" height="113"
+                                    src="img/logo_reglamentos.png" />
+                            </p>
+                            <p class="text-center"> <b> PROCEDIMIENTO DE RESPUESTA ANTE DERRAMES DE INSUMOS QUÍMICOS
+                                </b>
+                            </p>
+                            <div class="text-center"> <img class="img-fluid" width="588" height="566"
+                                    src="img/PROCEDIMIENTO_DE_RESPUESTA_ANTE_DERRAMES_DE_INSUMOS_QUÍMICOS.png" />
+                            </div>
+                            <div>
+                                <h1> 1. <u>OBJETIVO</u> </h1>
+                                <p> <b>
+                                        <p> </p>
+                                    </b> </p>
+                                <p> El objetivo del presente documento es dar a conocer los pasos de acción que permitan
+                                    la atención a derrames de sustancias peligrosas ocurridos en el interior de las
+                                    instalaciones de UTEC.
+                                    <p> </p>
+                                </p>
+                                <p>
+                                    <p>
+                                    </p>
+                                </p>
+                                <h1> 2. <u>ALCANCE</u>
+                                    <p> </p>
+                                </h1>
+                                <p> <b>
+                                        <p> </p>
+                                    </b> </p>
+                                <p> A todos los miembros de la comunidad universitaria, contratistas y visitantes que
+                                    manejen o almacenen insumos químicos o residuos peligrosos.
+                                    <p> </p>
+                                </p>
+                                <p>
+                                    <p>
+                                    </p>
+                                </p>
+                                <h1> 3. <u>REFERENCIAS</u>
+                                    <p> </p>
+                                </h1>
+                                <p> <b>
+                                        <p> </p>
+                                    </b> </p>
+                                <p> ■ D.L 1278, Decreto Legislativo que aprueba la Ley de Gestión Integral de Residuos
+                                    Sólidos
+                                    <p> </p>
+                                </p>
+                                <p> ■ Norma NFPA N° 704.
+                                    <p> </p>
+                                </p>
+                                <p>
+                                    <p>
+                                    </p>
+                                </p>
+                                <h1> 4. <u>RESPONSABILIDADES</u>
+                                    <p> </p>
+                                </h1>
+                                <p> <b>
+                                        <p> </p>
+                                    </b> </p>
+                                <p> <b>4.1. </b> <b> Directores, Gerentes, Jefes: <p> </p> </b> </p>
+                                <p> <b>
+                                        <p> </p>
+                                    </b> </p>
+                                <p> Asegurar el cumplimiento de lo dispuesto en el presente documento.
+                                    <p> </p>
+                                </p>
+                                <p>
+                                    <p>
+                                    </p>
+                                </p>
+                                <h1> 4.2. Profesores, coordinadores de PI, personal de laboratorios, brigada de
+                                    emergencia y otros responsables:
+                                    <p> </p>
+                                </h1>
+                                <p> <b>
+                                        <p> </p>
+                                    </b> </p>
+                                <p> Atender oportunamente las emergencias de derrames de insumos químicos aplicando lo
+                                    dispuesto en el presente documento.
+                                    <p> </p>
+                                </p>
+                                <p>
+                                    <p>
+                                    </p>
+                                </p>
+                                <h1> 4.3. Responsable de seguridad y salud en el trabajo:
+                                    <p> </p>
+                                </h1>
+                                <p> <b>
+                                        <p> </p>
+                                    </b> </p>
+                                <p> Definir los controles apropiados para cada riesgo en los espacios donde se emplean
+                                    insumos químicos.
+                                    <p> </p>
+                                </p>
+                                <p>
+                                    <p>
+                                    </p>
+                                </p>
+                                <h1> 4.4. Alumnos:
+                                    <p> </p>
+                                </h1>
+                                <p> <b>
+                                        <p> </p>
+                                    </b> </p>
+                                <p> Conocer y cumplir con lo dispuesto en el presente documento.
+                                    <p> </p>
+                                </p>
+                                <p>
+                                    <p>
+                                    </p>
+                                </p>
+                                <h1> 5. <u>DEFINICIONES</u>
+                                    <p> </p>
+                                </h1>
+                                <p> <b>
+                                        <p> </p>
+                                    </b> </p>
+                                <p> ■ <b>Rombo NFPA: </b>"diamante de materiales peligrosos" establecido por la
+                                    Asociación Nacional de Protección contra el Fuego, utilizado para comunicar los
+                                    riesgos de los materiales peligrosos.
+                                    <p> </p>
+                                </p>
+                                <p> ■ <b>Material Peligroso (MATPEL): </b>toda sustancia que pueda causar daño a la
+                                    salud, propiedades y el medioambiente.
+                                    <p> </p>
+                                </p>
+                                <p> ■ <b>Hoja de Seguridad (MSDS): </b>documento que indica los constituyentes
+                                    peligrosos del material, sus propiedades físicas y químicas, los peligros que
+                                    plantea a la salud, los niveles
+                                    <p> </p>
+                                </p>
+                            </div>
+                            <br clear="all" />
+                            <div>
+                                <p>
+                                    <p>
+                                    </p>
+                                </p>
+                                <p> de exposición permisibles, los procedimientos de primeros auxilios, los
+                                    procedimientos de emergencia y los requisitos para su manipulación y uso
+                                    recomendados. El fabricante debe proporcionar una MSDS para todos los materiales
+                                    potencialmente peligrosos.
+                                    <p> </p>
+                                </p>
+                                <p>
+                                    <p>
+                                    </p>
+                                </p>
+                                <h1> 6. <u>GENERALIDADES</u>
+                                    <p> </p>
+                                </h1>
+                                <p> <b>
+                                        <p> </p>
+                                    </b> </p>
+                                <p> a) Ante un derrame de insumo químico se deberá activar la emergencia a través de los
+                                    siguientes medios:
+                                    <p> </p>
+                                </p>
+                                <p> - Llamando al anexo 4120 (centro de control).
+                                    <p> </p>
+                                </p>
+                                <p> - Comunicando al personal de seguridad.
+                                    <p> </p>
+                                </p>
+                                <p> - Empleando la estación manual contra incendio.
+                                    <p> </p>
+                                </p>
+                                <p> - A viva voz.
+                                    <p> </p>
+                                </p>
+                                <p> b) También es muy importante informar correctamente, dando los datos necesarios
+                                    sobre la emergencia. La persona que reporta debe de considerar los siguientes datos:
+                                    <p> </p>
+                                </p>
+                                <p> - Nombre completo (Identificarse).
+                                    <p> </p>
+                                </p>
+                                <p> - Clasificar la emergencia o reportar el evento (indicar que pasa).
+                                    <p> </p>
+                                </p>
+                                <p> - Lugar de la emergencia (Explicar un punto de referencia).
+                                    <p> </p>
+                                </p>
+                                <p> - Describir la escena del incidente (atención médica, incendio, corto circuito)
+                                    <p> </p>
+                                </p>
+                                <p> - Reportar la presencia de heridos.
+                                    <p> </p>
+                                </p>
+                                <p> c) Adicionalmente podrá considerar:
+                                    <p> </p>
+                                </p>
+                                <p> - Solicitar recursos (Brigadas, Apoyo externo, etc.).
+                                    <p> </p>
+                                </p>
+                                <p> - Capacidad de iluminación en el área (si es un ambiente cerrado o noche).
+                                    <p> </p>
+                                </p>
+                                <p> - Vías de acceso (detallar por donde es mejor llegar a la emergencia).
+                                    <p> </p>
+                                </p>
+                                <p> d) Ante derrames de insumos químicos se deberá determinar con la mayor rapidez
+                                    posible, su importancia, magnitud y tratamiento más adecuado, el cual estará dado
+                                    por la peligrosidad, cantidad involucrada y características
+                                    del evento.
+                                    <p> </p>
+                                </p>
+                                <p> e) Asimismo, todos los laboratorios o ambientes donde se utilicen insumos químicos
+                                    deberán tener implementado un kit antiderrames.
+                                    <p> </p>
+                                </p>
+                                <p>
+                                    <p>
+                                    </p>
+                                </p>
+                                <h1> 7. <u>DESARROLLO</u>
+                                    <p> </p>
+                                </h1>
+                                <p> <b>
+                                        <p> </p>
+                                    </b> </p>
+                                <p> <b>7.1. </b> <b> Acción inicial para el control de derrames: <p> </p> </b> </p>
+                                <p> <b>
+                                        <p> </p>
+                                    </b> </p>
+                                <p> a) Alertar a todas las personas cercanas del derrame.
+                                    <p> </p>
+                                </p>
+                                <p> b) Identificar y consultar la Hoja de Seguridad (MSDS) para verificar si existen
+                                    instrucciones específicas para el control del insumo derramado.
+                                    <p> </p>
+                                </p>
+                                <p> c) Si el producto es inflamable o tóxico, ventilar el área abriendo todas las
+                                    ventanas y puertas posibles. Asimismo, eliminar toda fuente de ignición.
+                                    <p> </p>
+                                </p>
+                                <p> d) Si los insumos son compuestos peligrosos (nitratos, bromuro, sulfuro de carbono,
+                                    aminas aromáticas, tetraetilo de plomo, cianuros, etc.) evacuar el área para
+                                    proceder con el tratamiento del residuo.
+                                    <p> </p>
+                                </p>
+                                <p> e) Solo se controlará el derrame si se utiliza los equipos de protección personal
+                                    (EPP) adecuados y recomendado en la hoja de seguridad (MSDS).
+                                    <p> </p>
+                                </p>
+                                <p> f) Una vez controlado el derrame mantener ventilado el lugar el mayor tiempo posible
+                                    (en forma natural o artificial).
+                                    <p> </p>
+                                </p>
+                            </div>
+                            <br clear="all" />
+                            <p>
+                                <p>
+                                </p>
+                            </p>
+                            <p> g) Si el derrame compromete al cuerpo de una persona, proceder de la siguiente manera:
+                                <p> </p>
+                            </p>
+                            <p> - Quitarse la ropa contaminada mientras se usa la ducha de emergencia.
+                                <p> </p>
+                            </p>
+                            <p> - Recordar que no se debe perder ni un segundo.
+                                <p> </p>
+                            </p>
+                            <p> - Hacer correr agua en cantidad abundante, por la zona afectada, durante 15 minutos.
+                                Continuar el procedimiento si hay dolor.
+                                <p> </p>
+                            </p>
+                            <p> - No usar sustancias neutralizadoras, por ejemplo: ungüento, cremas ni lociones
+                                <p> </p>
+                            </p>
+                            <p>
+                                <p>
+                                </p>
+                            </p>
+                            <h1> 7.2. Control del derrame de líquidos:
+                                <p> </p>
+                            </h1>
+                            <p> <b>
+                                    <p> </p>
+                                </b>
+                            </p>
+                            <p> a) Esparcir el material absorbente (arena o vermiculita) sobre la superficie del
+                                derrame, desde la periferia hacia el centro.
+                                <p> </p>
+                            </p>
+                            <p> b) Evitar que el derrame llegue a algún alcantarillado. Prestar atención debajo de los
+                                muebles y equipos.
+                                <p> </p>
+                            </p>
+                            <p> c) Esperar unos minutos para asegurar que el derrame fue completamente absorbido.
+                                <p> </p>
+                            </p>
+                            <p> d) Recoger el material impregnado utilizando la pala y escoba del kit antiderrames y
+                                disponerlo en la bolsa plástica destinada para tal fin y cerrar.
+                                <p> </p>
+                            </p>
+                            <p> e) Etiquetar la bolsa con la identificación de residuo peligroso e indicar el nombre de
+                                la sustancia derramada con el fin de que se identifique posteriormente la clase de
+                                peligrosidad del residuo.
+                                <p> </p>
+                            </p>
+                            <p> f) Limpiar la superficie afectada con un paño absorbente, agua y detergente.
+                                <p> </p>
+                            </p>
+                            <p> g) Limpiar los implementos utilizados para el control del derrame y comunicar en caso de
+                                que se requiera su reposición.
+                                <p> </p>
+                            </p>
+                            <p>
+                                <p>
+                                </p>
+                            </p>
+                            <h1> 7.3. Control del derrame de sólidos:
+                                <p> </p>
+                            </h1>
+                            <p> <b>
+                                    <p> </p>
+                                </b>
+                            </p>
+                            <p> a) Recoger el material derramado utilizando la pala y escoba del Kit antiderrames y
+                                disponerlo en la bolsa plástica destinada para tal fin y cerrar.
+                                <p> </p>
+                            </p>
+                            <p> b) Etiquetar la bolsa con la identificación de residuo peligroso e indicar el nombre de
+                                la sustancia derramada con el fin de que se identifique posteriormente la clase de
+                                peligrosidad del residuo.
+                                <p> </p>
+                            </p>
+                            <p> c) Limpiar la superficie afectada con un paño absorbente, agua y detergente de ser
+                                necesario.
+                                <p> </p>
+                            </p>
+                            <p> d) Limpiar los implementos utilizados para el control del derrame y comunicar en caso de
+                                que se requiera su reposición.
+                                <p> </p>
+                            </p>
+                            <p>
+                                <p>
+                                </p>
+                            </p>
+                            <h1> 8. <u>REGISTROS</u>
+                                <p> </p>
+                            </h1>
+                            <p> <b>
+                                    <p> </p>
+                                </b>
+                            </p>
+                            <p> Ninguno.
+                                <p> </p>
+                            </p>
+                            <p>
+                                <p>
+                                </p>
+                            </p>
+                            <h1> 9. <u>CONTROL DE CAMBIOS</u>
+                                <p> </p>
+                            </h1>
+                            <p> <b>
+                                    <p> </p>
+                                </b>
+                            </p>
+                            <table border="1" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                    <tr>
+                                        <td width="104" valign="top">
+                                            <p align="center"> <b> Versión: <p> </p> </b> </p>
+                                        </td>
+                                        <td width="113" valign="top">
+                                            <p align="center"> <b> Fecha: <p> </p> </b> </p>
+                                        </td>
+                                        <td width="369" valign="top">
+                                            <p align="center"> <b> Descripción del cambio <p> </p> </b> </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="104" valign="top">
+                                            <p align="center"> 01
+                                                <p> </p>
+                                            </p>
+                                        </td>
+                                        <td width="113" valign="top">
+                                            <p align="center"> 14/03/2019
+                                                <p> </p>
+                                            </p>
+                                        </td>
+                                        <td width="369" valign="top">
+                                            <p align="center"> Documento nuevo
+                                                <p> </p>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p> <b>
+                                    <p> </p>
+                                </b>
+                            </p>
+                            <p> <b>10. </b> <b> <u>ANEXOS</u>
+                                    <p> </p>
+                                </b>
+                            </p>
+                            <p> Ninguno.
+                                <p> </p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pie-modal bg-dark text-white">
+                    <div class="row">
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-sx-9"><label><input type="checkbox" id="conforme2"
+                                    disabled /> He leído y acepto los términos y condiciones descritos en el presente
+                                reglamento</label></div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-sx-3 text-center"><button id="btnGuardar2"
+                                type="button" class="btn btn-light" disabled>Guardar</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="documento3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-primary">
+                    <div class="modal-title text-white" id="exampleModalLongTitle">
+                        <h2>¡Importante!</h2>
+                        <p class="h5">Es necesario leer el documento por completo para dar conformidad, una vez
+                            finalizado, marque la casilla y de click en Guardar.</p>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal-body-doc3">
+                    <!-- Todo el documento transformado en HTML -->
+                    <div class="text-justify" id="agreement3">
+                        <div>
+                            <p class="text-center">
+                                <img class="img-fluid" width="764" height="1110"
+                                    src="img/Procedimiento de respuesta ante fuga de gases.png" />
+                            </p>
+                        </div>
+                        <br clear="all" />
+                        <div>
+                            <h1> 1. <u>OBJETIVO</u>
+                            </h1>
+                            <p> El objetivo del presente documento es dar a conocer los pasos de acción ante la fuga de
+                                gases que se pudieran presentar dentro de las instalaciones de UTEC.
+                            </p>
+                            <h1> 2. <u>ALCANCE</u>
+                            </h1>
+                            <p> A toda la comunidad universitaria, contratistas y visitantes.
+                            </p>
+                            <h1> 3. <u>REFERENCIAS</u>
+                            </h1>
+                            <p> Ninguna.
+                            </p>
+                            <h1> 4. <u>RESPONSABILIDADES</u>
+                            </h1>
+                            <p> <strong>4.1. </strong> <strong>Responsable de seguridad:</strong>
+                            </p>
+                            <p> Asegurar el cumplimiento de lo dispuesto en el presente documento.
+                            </p>
+                            <p> Analizar la condición del escenario presentado a fin de determinar las soluciones
+                                pertinentes para la protección de las personas y patrimonio.
+                            </p>
+                            <h1> 4.2. Área de Servicios Generales:
+                            </h1>
+                            <p> Asegurar el mantenimiento preventivo del sistema de ductería de gases.
+                            </p>
+                            <p> Mantener registro de los mantenimientos preventivos y/o correctivos ejecutados.
+                            </p>
+                            <h1> 4.3. Profesores, personal de laboratorios, brigadas de emergencia, personal de
+                                seguridad:
+                            </h1>
+                            <p> Atender oportunamente la emergencia según lo dispuesto en el presente documento.
+                            </p>
+                            <p> Ejecutar y/o apoyar en la evacuación, rescate y atención de primeros auxilios.
+                            </p>
+                            <h1> 4.4. Centro de control:
+                            </h1>
+                            <p> Recabar y anotar toda la información de la emergencia.
+                            </p>
+                            <p> Realizar las comunicaciones oportunamente durante la emergencia.
+                            </p>
+                            <h1> 4.5. Médico de tópico:
+                            </h1>
+                            <p> Brindar la atención médica de posibles heridos durante la emergencia.
+                            </p>
+                            <p> Definir y coordinar el traslado de heridos al centro hospitalario más cercano.
+                            </p>
+                            <h1> 4.6. Comunidad universitaria, contratistas y visitantes:
+                            </h1>
+                            <p> Cumplir con lo dispuesto en el presente documento.
+                            </p>
+                        </div>
+                        <br clear="all" />
+                        <div>
+                            <h1> 5. <u>DEFINICIONES</u>
+                            </h1>
+                            <p> <strong>Comunidad universitaria: </strong>Grupo de personas integrada por alumnos,
+                                docentes y administrativos
+                            </p>
+                            <p> <strong>Estación manual: </strong>Es un aparato diseñado para ser activado en caso de
+                                incendio, tirando de una palanca. Al ser activado, el aparato informa de inmediato al
+                                panel contra incendio a fin de ser gestionada la emergencia.
+                            </p>
+                            <p> <strong>Incidencia: </strong>Evento que se produce en el transcurso de una actividad, un
+                                relato, etc., y que repercute en él alterándolo o interrumpiéndolo. (buscar una mejor
+                                definición enfocándolo a la actividad/ trabajo realizado)
+                            </p>
+                            <p> <strong>Panel contra incendio: </strong>Equipo encargado de recibir la señal de los
+                                detectores o sensores de humo y dar aviso mediante sistemas de notificación sonora o
+                                luminosa.
+                            </p>
+                            <h1> 6. <u>GENERALIDADES</u>
+                            </h1>
+                            <p> a) Se deberá mantener una lista, la cual contenga la fecha de todas las revisiones y
+                                reparaciones que se han realizado durante un período de a lo menos doce meses. Asimismo,
+                                una copia del plano de los ductos de gas empleados
+                                e instalaciones eléctricas de la instalación.
+                            </p>
+                            <p> b) El personal responsable de los ambientes donde se utilice gas deberá cerciorarse de
+                                que después de ser utilizado quede cerrada la llave de paso.
+                            </p>
+                            <p> c) Toda persona que detecte olor a gas deberá dar informe de inmediato activando la
+                                emergencia, empleando los siguientes medios:
+                            </p>
+                            <p> - Llamando al anexo 4120 (centro de control).
+                            </p>
+                            <p> - Comunicando al personal de seguridad.
+                            </p>
+                            <p> - Empleando la estación manual contra incendio.
+                            </p>
+                            <p> - A viva voz.
+                            </p>
+                            <p> d) También es muy importante informar correctamente, dando los datos necesarios sobre la
+                                emergencia. La persona que reporta debe de considerar los siguientes datos:
+                            </p>
+                            <p> - Nombre completo (Identificarse).
+                            </p>
+                            <p> - Clasificar la emergencia o reportar el evento (indicar que pasa).
+                            </p>
+                            <p> - Lugar de la emergencia (Explicar un punto de referencia).
+                            </p>
+                            <p> - Describir la escena del incidente.
+                            </p>
+                            <p> - Reportar la presencia de heridos.
+                            </p>
+                            <p> e) Adicionalmente podrá considerar:
+                            </p>
+                            <p> - Solicitar recursos (Brigadas, Apoyo externo, etc.).
+                            </p>
+                            <p> - Capacidad de iluminación en el área (si es un ambiente cerrado o noche).
+                            </p>
+                            <p> - Vías de acceso (detallar por donde es mejor llegar a la emergencia).
+                            </p>
+                        </div>
+                        <br clear="all" />
+                        <div>
+                            <h1> 7. <u>DESARROLLO</u>
+                            </h1>
+                            <p> <strong>7.1. </strong> <strong>Durante la fuga de gas:</strong>
+                            </p>
+                            <p> a) Se deberá cortar inmediatamente el suministro de gas. Si no se puede cortar y hay
+                                fuego, no se deberá tratar de apagarlo, es mejor quemar el gas que dejarlo acumularse en
+                                el exterior, por lo que el riesgo sería mucho mayor
+                                si esto sucediera, en lo posible solo personal capacitado deberá regar con agua el
+                                cuerpo del cilindro a fin de enfriarlo (chorros de niebla). De no ser posible, se
+                                evacuará la zona esperando la llegada y acción del cuerpo
+                                de bomberos.
+                            </p>
+                            <p> b) Se deberá ventilar el ambiente en que se encuentre la fuga de gas, abriendo puertas y
+                                ventanas.
+                            </p>
+                            <p> c) Por ninguna razón se deberá producir fuego o chispa que active el gas. No accionar
+                                interruptores eléctricos ni utilizar fósforos u otro artefacto.
+                            </p>
+                            <p> d) Si el fuego amenaza con quemar algún mueble y/o material combustible cercano, se
+                                deberá tratar de retirarlo con la seguridad del caso. De estar quemando alguno, se
+                                procederá a utilizar los extintores necesarios sobre los
+                                objetos incendiados procurando no sofocar la llama sobre el balón de gas, salvo que las
+                                condiciones de seguridad lo permitan y puedan controlar inmediatamente la fuga
+                                resultante.
+                            </p>
+                            <p> e) Para el caso de cocinas, si estas son alimentadas por un cilindro o tanque
+                                estacionario, se deberá cerrar rápidamente la llave de alimentación.
+                            </p>
+                            <p> f) En el caso de ser necesario se procederá a la evacuación de la instalación. Para tal
+                                efecto, no se deberá emplear por ningún motivo los ascensores.
+                            </p>
+                            <p> g) Se deberá solicitar la presencia del cuerpo de bomberos de ser necesario.
+                            </p>
+                            <h1> 7.2. Después de la fuga de gas:
+                            </h1>
+                            <p> a) La evacuación de la instalación deberá realizarse siempre hacia los puntos de
+                                reunión/ encuentro ubicados sobre el Jr. Medrano Silva.
+                            </p>
+                            <p> b) El personal de seguridad deberá acordonar o restringir el acceso a personas no
+                                autorizadas a la instalación.
+                            </p>
+                            <p> c) En caso de existir personas accidentadas, el médico de tópico con apoyo de los
+                                brigadistas de emergencia y personal de seguridad brindará la atención médica
+                                correspondiente. Asimismo, de ser necesario coordinará el traslado
+                                del personal accidentado a un centro hospitalario.
+                            </p>
+                            <p> c) Se deberá mantener la calma en todo momento a la espera de instrucciones. No se
+                                abandonará el punto de encuentro sin informar previamente.
+                            </p>
+                            <p> d) Evaluada la condición de la emergencia y de ser el caso el responsable de seguridad
+                                (Jefe de brigada) coordinará la actividad de rescate de personas atrapadas. Asimismo,
+                                deberá comunicar al Comité de Seguridad de Defensa
+                                Civil la condición de la misma a fin de evaluar la magnitud de los daños sufridos en la
+                                instalación, así como toda condición peligrosa que se pueda detectar. De ser necesario,
+                                deberá coordinar los trabajos de remoción o
+                                retiro de escombros y limpieza.
+                            </p>
+                            <p> e) No reanudar las actividades, hasta que el área se encuentre despejada de gas o siga
+                                las recomendaciones de los bomberos
+                            </p>
+                        </div>
+                        <br clear="all" />
+                        <h1>
+                            8. <u>REGISTROS</u>
+                        </h1>
+                        <p>
+                            <strong></strong>
+                        </p>
+                        <p>
+                            Ninguno.
+                        </p>
+                        <h1>
+                            9. <u>CONTROL DE CAMBIOS</u>
+                        </h1>
+                        <p>
+                            <strong></strong>
+                        </p>
+                        <table border="1" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td width="104" valign="top">
+                                        <p align="center"> <strong>Versión:</strong> </p>
+                                    </td>
+                                    <td width="113" valign="top">
+                                        <p align="center"> <strong>Fecha:</strong> </p>
+                                    </td>
+                                    <td width="369" valign="top">
+                                        <p align="center"> <strong>Descripción del cambio</strong> </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="104" valign="top">
+                                        <p align="center"> 01 </p>
+                                    </td>
+                                    <td width="113" valign="top">
+                                        <p align="center"> 14/03/2019 </p>
+                                    </td>
+                                    <td width="369" valign="top">
+                                        <p align="center"> Documento nuevo </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>
+                            <strong></strong>
+                        </p>
+                        <p>
+                            <strong>10. </strong>
+                            <strong><u>ANEXOS</u></strong>
+                        </p>
+                        <p>
+                            <strong></strong>
+                        </p>
+                        <p>
+                            Ninguno.
+                        </p>
+                    </div>
+                </div>
+                <div class="pie-modal bg-dark text-white">
+                    <div class="row">
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-sx-9"><label><input type="checkbox" id="conforme3"
+                                    disabled /> He leído y acepto los términos y condiciones descritos en el presente
+                                reglamento</label></div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-sx-3 text-center"><button id="btnGuardar3"
+                                type="button" class="btn btn-light" disabled>Guardar</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal fade" id="documento4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-primary">
+                    <div class="modal-title text-white" id="exampleModalLongTitle">
+                        <h2>¡Importante!</h2>
+                        <p class="h5">Es necesario leer el documento por completo para dar conformidad, una vez
+                            finalizado, marque la casilla y de click en Guardar.</p>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal-body-doc4">
+                    <!-- Todo el documento transformado en HTML -->
+                    <div class="text-justify" id="agreement4">
+                        <div>
+                            <p class="text-center">
+                                <img class="img-fluid" width="794" height="1110"
+                                    src="img/Procedimiento para el uso adecuado de herramientas y maquinas.png" />
+                            </p>
+                        </div>
+                        <br clear="all" />
+                        <div>
+                            <h1>
+                                1. <u>OBJETIVO</u>
+                            </h1>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                Establecer las pautas para el correcto uso, almacenamiento e inspección de las
+                                herramientas y máquinas a fin de salvaguardar la integridad física de los usuarios.
+                            </p>
+                            <h1>
+                                2. <u>ALCANCE</u>
+                            </h1>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                A todos los miembros de la comunidad universitaria, contratistas y visitantes que hagan
+                                uso de herramientas.
+                            </p>
+                            <h1>
+                                3. <u>REFERENCIAS</u>
+                            </h1>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                ▪ Ley N° 29783, Ley de Seguridad y Salud en el Trabajo.
+                            </p>
+                            <p>
+                                ▪ Ley N° 30222, Ley que modifica Ley de Seguridad y Salud en el Trabajo
+                            </p>
+                            <p>
+                                ▪ D.S. N° 005-2012-TR, Reglamento de Ley de Seguridad y Salud en el Trabajo.
+                            </p>
+                            <p>
+                                ▪ D.S. N° 006-2014-TR, Reglamento que modifica el reglamento de la Ley de Seguridad y
+                                Salud en el Trabajo.
+                            </p>
+                            <h1>
+                                4. <u>DEFINICIONES</u>
+                            </h1>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                ▪ <strong>Comunidad universitaria: </strong>Grupo de personas integrada por alumnos,
+                                docentes y administrativos.
+                            </p>
+                            <p>
+                                ▪ <strong>Herramientas Eléctricas: </strong>Son todas aquellas que funcionan con energía
+                                eléctrica.
+                            </p>
+                            <p>
+                                ▪ <strong>Herramientas Manuales: </strong>Son herramientas de trabajo utilizadas
+                                generalmente de forma individual que únicamente requieren para su accionamiento la
+                                fuerza motriz humana.
+                            </p>
+                            <p>
+                                ▪ <strong>Máquinas: </strong>Conjunto de elementos móviles y fijos cuyo funcionamiento
+                                posibilita aprovechar, dirigir, regular o transformar energía, o realizar un trabajo con
+                                un fin determinado.
+                            </p>
+                            <p>
+                                ▪ <strong>Condiciones idóneas: </strong>Ambiente o lugar que presenta las
+                                características adecuadas para el fin que se requiere (orden, limpieza, no exposición al
+                                agua,etc.).
+                            </p>
+                            <h1>
+                                5. <u>RESPONSABILIDADES</u>
+                            </h1>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                <strong>5.1. </strong>
+                                <strong>Responsable de seguridad y salud en el trabajo:</strong>
+                            </p>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                ▪ Orientar a la comunidad universitaria, contratistas y visitantes en cuanto al uso
+                                correcto de las herramientas a utilizar en el trabajo a ejecutar, informando de los
+                                riesgos asociados y de las medidas preventivas y de control que se deben adoptar al
+                                momento de utilizar la o las herramientas.
+                            </p>
+                            <p>
+                                ▪ Coordinar el entrenamiento o capacitación en manipulación de herramientas y máquinas
+                                para todo el personal que las utilice en sus diversas actividades.
+                            </p>
+                            <p>
+                                ▪ Implementar y difundir un Plan de Respuesta a Emergencias para responder a situaciones
+                                adversas ocasionadas por la manipulación de herramientas o máquinas.
+                            </p>
+                            <h1>
+                                5.2. Comunidad universitaria, contratistas y visitantes:
+                            </h1>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                ▪ Son responsables de toda herramienta a utilizar esté o no a su cargo.
+                            </p>
+                            <p>
+                                ▪ Inspeccionar visualmente las herramientas a manipular antes de su uso.
+                            </p>
+                            <p>
+                                ▪ Mantener las herramientas en buenas condiciones de uso.
+                            </p>
+                        </div>
+                        <br clear="all" />
+                        <div>
+                            <p>
+                                ▪ Utilizar el equipo de protección personal (EPP) adecuado de acuerdo con la herramienta
+                                a utilizar.
+                            </p>
+                            <p>
+                                ▪ Asegurar que las herramientas sean utilizadas para el fin que fueron diseñadas.
+                            </p>
+                            <p>
+                                ▪ Informar a su responsable inmediato en el caso que las herramientas a usar presenten
+                                una condición de daño.
+                            </p>
+                            <p>
+                                ▪ No emplear herramientas, equipos o máquinas sin contar con la autorización y
+                                capacitación debida.
+                            </p>
+                            <h1>
+                                6. <u>GENERALIDADES</u>
+                            </h1>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                ▪ El uso de herramientas para fines académicos (clases, proyectos, tesis, otros), deberá
+                                ser supervisado en todo momento por el docente, coordinador, asesor, asistente u otro
+                                responsable inmediato. Asimismo, deberán asegurar la previa inducción de los
+                                alumnos a través de los medios pertinentes (charlas, guías, manuales, instructivos,
+                                videos, etc.).
+                            </p>
+                            <p>
+                                ▪ Toda herramienta debe ser utilizada para el fin que fue diseñada, quedando prohibido
+                                el uso inadecuado de las mismas.
+                            </p>
+                            <p>
+                                ▪ Las herramientas deberán ser almacenadas en lugares adecuados en condiciones óptimas
+                                de orden y limpieza.
+                            </p>
+                            <p>
+                                ▪ Las máquinas sólo serán utilizadas por el personal autorizado y debidamente capacitado
+                                para ello.
+                            </p>
+                            <h1>
+                                7. <u>DESARROLLO</u>
+                            </h1>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                <strong>7.1. </strong>
+                                <strong>Uso de herramientas y máquinas:</strong>
+                            </p>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                <strong>7.1.1. </strong>
+                                <strong>Herramientas manuales:</strong>
+                            </p>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                La manipulación de herramientas manuales comunes como martillos, destornilladores,
+                                alicates, tenazas y llaves diversas, constituye una práctica habitual en talleres y
+                                trabajos de mantenimiento. Las causas más frecuentes de accidentes se pueden deber a
+                                la calidad deficiente de las herramientas, uso inadecuado para el trabajo que se realiza
+                                con ellas, falta de experiencia en su manejo por parte del usuario, mantenimiento
+                                inadecuado, así como transporte y emplazamiento
+                                incorrectos. En ese sentido, se deberán seguir las siguientes recomendaciones generales:
+                            </p>
+                            <p>
+                                a) Antes de comenzar una actividad, se deberá verificar el buen estado de las
+                                herramientas, inspeccionando cuidadosamente mangos, filos, acoplamientos y fijaciones en
+                                busca de grietas, astillas, roturas, etc.
+                            </p>
+                            <p>
+                                b) Conservar las herramientas en buenas condiciones de uso.
+                            </p>
+                            <p>
+                                c) Utilizar las herramientas adecuadas a cada tipo de trabajo.
+                            </p>
+                            <p>
+                                d) Contar con entrenamiento apropiado (inducción) en el manejo de las herramientas.
+                            </p>
+                            <p>
+                                e) Transportar de forma adecuada y segura, protegiendo sus filos y puntas, manteniéndose
+                                ordenadas, limpias y en buen estado, en el lugar adecuado.
+                            </p>
+                        </div>
+                        <br clear="all" />
+                        <div>
+                            <h1>
+                                7.1.2. Máquinas portátiles:
+                            </h1>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                Debido a la ayuda mecánica con la que cuentan las máquinas portátiles, su uso es cada
+                                vez más relevante ya que evita la fatiga que supone la utilización de herramientas
+                                manuales, aportando la energía suficiente para efectuar el trabajo de modo más rápido
+                                y eficaz.
+                            </p>
+                            <p>
+                                Las causas de los accidentes con este tipo de máquinas son muy similares a las indicadas
+                                para las herramientas manuales, es decir, deficiente calidad de la máquina, utilización
+                                inadecuada, falta de experiencia en el manejo, y mantenimiento insuficiente.
+                                Conviene precisar también que los accidentes que se producen con este tipo de máquinas
+                                suelen ser más graves que los provocados por las herramientas manuales.
+                            </p>
+                            <p>
+                                Para estudiar con mayor profundidad los riesgos que originan las máquinas portátiles y
+                                las formas de prevención se considera oportuno señalar aquí los más frecuentes:
+                            </p>
+                            <p>
+                                · Lesiones producidas por el útil de la herramienta, tanto por contacto directo, como
+                                por rotura de dicho elemento.
+                            </p>
+                            <p>
+                                · Lesiones provocadas por la fuente de alimentación, es decir, las derivadas de
+                                contactos eléctricos, roturas o fugas de las conducciones de aire comprimido o del
+                                fluido hidráulico, escapes de fluidos a alta presión, etc.
+                            </p>
+                            <p>
+                                · Lesiones originadas por la proyección de partículas a gran velocidad, especialmente
+                                las oculares.
+                            </p>
+                            <p>
+                                · Alteraciones de la función auditiva, como consecuencia del ruido que generan.
+                            </p>
+                            <p>
+                                · Lesiones osteoarticulares derivadas de las vibraciones que producen.
+                            </p>
+                            <h1>
+                                7.1.3. Herramientas Eléctricas:
+                            </h1>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                a) Los enchufes y tomacorrientes deberán estar en buenas condiciones y con cables
+                                debidamente aislados. Asimismo, las herramientas dotadas de enchufe de tres espigas se
+                                conectarán en tomacorrientes de tres orificios.
+                            </p>
+                            <p>
+                                b) Nunca se cortará una espiga para que concuerde con el tomacorriente.
+                            </p>
+                            <p>
+                                c) Nunca enchufar la herramienta en tomacorrientes rotos.
+                            </p>
+                            <p>
+                                d) Nunca enchufar alambres pelados en tomacorrientes.
+                            </p>
+                            <p>
+                                e) Deben estar conectadas a tierra o doblemente aisladas.
+                            </p>
+                            <p>
+                                f) Nunca se desconectarán equipos jalándose del cordón sino del enchufe.
+                            </p>
+                            <p>
+                                g) Desconectar el enchufe de la herramienta antes de ajustar, limpiar o cambiar un
+                                accesorio.
+                            </p>
+                            <p>
+                                h) Si una herramienta va a dejar de usarse, se deberá desconectar el enchufe.
+                            </p>
+                            <p>
+                                i) Mantener el área de trabajo bien iluminada y libre de obstáculos.
+                            </p>
+                            <p>
+                                j) No hacer bromas o jugar utilizando herramientas eléctricas.
+                            </p>
+                            <p>
+                                k) Nunca se debe llevar una herramienta por el cable.
+                            </p>
+                            <p>
+                                l) Mantener los cables lejos del calor, del aceite y de bordes filosos (incluyendo la
+                                superficie cortante de una sierra o de un taladro eléctrico).
+                            </p>
+                            <p>
+                                m) No mover una herramienta conectada con los dedos sobre el interruptor.
+                            </p>
+                            <p>
+                                n) Antes de conectar una herramienta, verificar que su interruptor está en la posición
+                                de “apagado”.
+                            </p>
+                        </div>
+                        <br clear="all" />
+                        <div>
+                            <p>
+                                o) No debe usarse herramientas eléctricas cerca de materiales combustibles o
+                                inflamables.
+                            </p>
+                            <p>
+                                p) Sujetar la herramienta con ambas manos.
+                            </p>
+                            <p>
+                                q) Los discos o muelas de herramientas de corte, esmeriles o devastadoras estarán
+                                enteras en todo su diámetro, es decir, libres de grietas u otros signos que hagan dudar
+                                de su integridad. No se usarán discos o muelas a velocidad mayor a la que se indique
+                                en las mismas. Deberán tener guardas apropiadas instalados todo el tiempo y mirará
+                                siempre al trabajador. El disco o piedra quedará siempre debajo de la guarda.
+                            </p>
+                            <p>
+                                r) No usar ropa suelta (chalinas, bufandas) o elementos que puedan ser atrapados por la
+                                herramienta.
+                            </p>
+                            <p>
+                                s) No estarán permitidas las extensiones unidas con cinta aislante o vulcanizada.
+                            </p>
+                            <p>
+                                t) Se deberán proteger los conductores eléctricos de quemaduras, corrosivos, corte,
+                                aplastamiento, paso de vehículos, etc.
+                            </p>
+                            <p>
+                                u) Se evitará colocar cables eléctricos sobre objetos metálicos, tuberías, que faciliten
+                                las fugas de corriente.
+                            </p>
+                            <p>
+                                v) Los interruptores de las herramientas eléctricas deberán cumplir los siguientes
+                                requisitos:
+                            </p>
+                            <p>
+                                - Estarán situados de manera que se evite el riesgo de una puesta en marcha intempestiva
+                                o imprevista.
+                            </p>
+                            <p>
+                                - Si la herramienta está ubicada horizontalmente, no deberá haber riesgo de
+                                funcionamiento accidental.
+                            </p>
+                            <p>
+                                - Estarán sometidos a la presión de un resorte que obligue al usuario a mantener la
+                                posición de marcha solamente presionando el interruptor constantemente.
+                            </p>
+                            <p>
+                                - Estarán situados de forma que pueda llevarse a la posición de marcha, sin que el
+                                operador deje de empuñar la herramienta.
+                            </p>
+                            <p>
+                                - Cuando la herramienta esté diseñada para varias tensiones, se distinguirá fácilmente y
+                                de forma clara la tensión para la cual está ajustada.
+                            </p>
+                            <h1>
+                                7.1.4. Maquinas:
+                            </h1>
+                            <p>
+                                <strong></strong>
+                            </p>
+                            <p>
+                                a) No se deberá llevar ropas holgadas, cadenas, anillos ni ningún otro elemento que
+                                pueda resultar atrapado por las máquinas. Asimismo, no llevar: pantalón corto, faldas
+                                cortas, sandalias, zapatos abiertos, etc., es decir zonas descubiertas de piel que
+                                queden expuestas a las proyecciones.
+                            </p>
+                            <p>
+                                b) Es recomendable llevar recogidos los cabellos, ya que el pelo largo puede engancharse
+                                en los montajes y equipos.
+                            </p>
+                            <p>
+                                c) Al terminar una tarea u operación la mesa de trabajo y la máquina deberán quedar
+                                limpias, los materiales utilizados ordenados y todo apagado.
+                            </p>
+                            <p>
+                                d) No debe utilizarse los equipos sin formación y/ o autorización.
+                            </p>
+                            <p>
+                                e) Para el trabajo habitual con máquinas que produzcan proyecciones deberán llevarse
+                                gafas de seguridad.
+                            </p>
+                            <p>
+                                f) Nunca se emplearán las manos, ni herramientas ni otros objetos, para detener o frenar
+                                el movimiento de las máquinas.
+                            </p>
+                            <p>
+                                g) Nunca se deberá anular o “puentear” cualquier dispositivo de seguridad que disponga
+                                la máquina, ni tampoco retirar las protecciones o resguardos.
+                            </p>
+                        </div>
+                        <br clear="all" />
+                        <p>
+                            h) Toda operación de ajuste, limpieza, engrase y reparación deberá realizarse siempre con la
+                            máquina parada y desconectada de la fuente de alimentación de energía.
+                        </p>
+                        <h1>
+                            7.1.5. Otras Herramientas:
+                        </h1>
+                        <p>
+                            <strong></strong>
+                        </p>
+                        <p>
+                            a) Las herramientas a combustible deberán apagarse durante el llenado de combustible.
+                        </p>
+                        <p>
+                            b) Evitar usar herramientas que tengan mangos lisos o resbaladizos.
+                        </p>
+                        <p>
+                            c) Las herramientas neumáticas deberán ser conectadas al suministro de aire mediante
+                            mangueras con terminal de acople rápido y adicionalmente se colocará en esta unión un cable
+                            de seguridad que asegure la manguera en caso de rotura de la unión.
+                        </p>
+                        <h1>
+                            7.2. Almacenamiento:
+                        </h1>
+                        <p>
+                            <strong></strong>
+                        </p>
+                        <p>
+                            a) Al finalizar el trabajo, las herramientas deberán ser oportunamente recogidas y
+                            almacenadas.
+                        </p>
+                        <p>
+                            b) Las herramientas se conservarán adecuadamente ordenadas, tanto en su uso como en su
+                            almacenamiento, procurando agruparlas en función de su tamaño y características.
+                        </p>
+                        <p>
+                            c) Se deberá hacer uso de paneles, cajas o estantes, preferentemente con soportes fijos
+                            donde cada herramienta tenga su lugar. Asimismo, no dejarlas en sitios altos porque pueden
+                            deslizarse y caer.
+                        </p>
+                        <p>
+                            d) En el almacenamiento se evitará depositar las herramientas en lugares húmedos o expuestos
+                            a los agentes atmosféricos.
+                        </p>
+                        <p>
+                            e) Todas las herramientas deben almacenarse con la punta y el filo protegidos.
+                        </p>
+                        <h1>
+                            7.3. Entrenamiento:
+                        </h1>
+                        <p>
+                            <strong></strong>
+                        </p>
+                        <p>
+                            a) El responsable de seguridad y salud en el trabajo deberá contemplar, dentro del programa
+                            anual de capacitaciones, temas relacionados en el uso de herramientas y máquinas a fin de
+                            prevenir todo tipo de accidente o incidente en el uso de las mismas.
+                        </p>
+                        <h1>
+                            8. <u>REGISTROS</u>
+                        </h1>
+                        <p>
+                            <strong></strong>
+                        </p>
+                        <p>
+                            Ninguno.
+                        </p>
+                        <h1>
+                            9. <u>CONTROL DE CAMBIOS</u>
+                        </h1>
+                        <p>
+                            <strong></strong>
+                        </p>
+                        <table border="1" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td width="104" valign="top">
+                                        <p align="center">
+                                            <strong>Versión:</strong>
+                                        </p>
+                                    </td>
+                                    <td width="113" valign="top">
+                                        <p align="center">
+                                            <strong>Fecha:</strong>
+                                        </p>
+                                    </td>
+                                    <td width="369" valign="top">
+                                        <p align="center">
+                                            <strong>Descripción del cambio</strong>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="104" valign="top">
+                                        <p align="center">
+                                            01
+                                        </p>
+                                    </td>
+                                    <td width="113" valign="top">
+                                        <p align="center">
+                                            27/05/2019
+                                        </p>
+                                    </td>
+                                    <td width="369" valign="top">
+                                        <p align="center">
+                                            Documento nuevo
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>
+                            <strong></strong>
+                        </p>
+                        <p>
+                            <strong>10. </strong>
+                            <strong><u>ANEXOS</u></strong>
+                        </p>
+                        <p>
+                            <strong></strong>
+                        </p>
+                        <p>
+                            Ninguno.
+                        </p>
+                    </div>
+                </div>
+                <div class="pie-modal bg-dark text-white">
+                    <div class="row">
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-sx-9"><label><input type="checkbox" id="conforme4"
+                                    disabled /> He leído y acepto los términos y condiciones descritos en el presente
+                                reglamento</label></div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-sx-3 text-center"><button id="btnGuardar4"
+                                type="button" class="btn btn-light" disabled>Guardar</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div class="modal fade" id="documento5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-primary">
+                    <div class="modal-title text-white" id="exampleModalLongTitle">
+                        <h2>¡Importante!</h2>
+                        <p class="h5">Es necesario leer el documento por completo para dar conformidad, una vez
+                            finalizado, marque la casilla y de click en Guardar.</p>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal-body-doc5">
+                    <!-- Todo el documento transformado en HTML -->
+                    <div class="text-justify" id="agreement5">
+                        <div>
+                            <p class="text-center">
+                                <img class="img-fluid" width="795" height="1123"
+                                    src="img/Procedimiento para la manipulación, almacenamiento y transporte de insumos quimincos.png" />
+                            </p>
+                        </div>
+                        <br clear="all" />
+                        <div>
+                            <p>
+                                <strong>1.</strong>
+                                <strong><u>OBJETIVO</u></strong>
+                            </p>
+                            <p>
+                                Establecer los lineamientos para el correcto uso, transporte y almacenamiento de los
+                                insumos químicos empleados en UTEC.
+                            </p>
+                            <p>
+                                <strong>2.</strong>
+                                <strong><u>ALCANCE</u></strong>
+                            </p>
+                            <p>
+                                A todos los miembros de la comunidad universitaria, contratistas y visitantes que
+                                realicen actividades con insumos químicos dentro de las instalaciones de UTEC.
+                            </p>
+                            <p>
+                                <strong>3.</strong>
+                                <strong><u>REFERENCIAS</u></strong>
+                            </p>
+                            <p>
+                                ▪ Ley N° 29783, Ley de Seguridad y Salud en el Trabajo.
+                            </p>
+                            <p>
+                                ▪ Ley N° 30222, Ley que modifica Ley de Seguridad y Salud en el Trabajo.
+                            </p>
+                            <p>
+                                ▪ D.S. N° 005-2012-TR, Reglamento de Ley de Seguridad y Salud en el Trabajo.
+                            </p>
+                            <p>
+                                ▪ D.S. N° 006-2014-TR, Reglamento que modifica el reglamento de la Ley de Seguridad y
+                                Salud en el Trabajo.
+                            </p>
+                            <p>
+                                ▪ Ley N° 28305, ley de control de insumos químicos y productos fiscalizados. ▪ Decreto
+                                legislativo 1278 Ley integral de residuos sólidos.
+                            </p>
+                            <p>
+                                ▪ Decreto Legislativo<u> </u>N° 1126. ▪ D.S. 021-2008-MTC.
+                            </p>
+                            <p>
+                                <strong>4.</strong>
+                                <strong><u>RESPONSABILIDADES</u></strong>
+                            </p>
+                            <p>
+                                <strong>4.1.</strong>
+                                <strong>Directores</strong>
+                                <strong>de</strong>
+                                <strong>Carrera:</strong>
+                            </p>
+                            <p>
+                                ▪ Asegurar el cumplimiento de lo dispuesto en el presente documento.
+                            </p>
+                            <p>
+                                ▪ Aprobar la compra de insumos químicos con valores de riesgo crítico, bajo el
+                                asesoramiento del comité de seguridad de ingeniería química y bioingeniería.
+                            </p>
+                            <p>
+                                <strong>4.2.</strong>
+                                <strong>Profesores:</strong>
+                            </p>
+                            <p>
+                                ▪ Revisar las hojas de seguridad (MSDS) de cada insumo químico a emplear a fin de
+                                conocer sus controles de seguridad durante su uso.
+                            </p>
+                            <p>
+                                ▪ Utilizar el equipo de protección personal (EPP) recomendado en la hoja de seguridad
+                                (MSDS). Asimismo, exigir lo propio a todos los usuarios involucrados antes, durante y
+                                posterior a la actividad.
+                            </p>
+                            <p>
+                                ▪ Brindar la charla previa de inducción antes de cada actividad. Asimismo, supervisar y
+                                garantizar el trabajo adecuado con insumos químicos.
+                            </p>
+                            <p>
+                                <strong>4.3. Personal de laboratorio:</strong>
+                            </p>
+                            <p>
+                                ▪ Antes de iniciar cualquier tarea que involucre el uso de insumos químicos, deberá
+                                acondicionar el espacio de trabajo, así como instruir a los usuarios de los laboratorios
+                                acerca de todos los peligros a los que están expuestos, proporcionando como mínimo
+                                la
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                información contenida en la hoja de seguridad (MSDS) y las recomendaciones de seguridad
+                                pertinentes.
+                            </p>
+                            <p>
+                                ▪ Asegurar la disponibilidad de las hojas de seguridad (MSDS) de cada insumo químico
+                                usado en el área de trabajo.
+                            </p>
+                            <p>
+                                ▪ Asegurar que todos los insumos químicos estén adecuadamente etiquetados antes de
+                                almacenarlos, usarlos, despacharlos o transportarlos.
+                            </p>
+                            <p>
+                                ▪ Mantener inventario con información al día sobre la cantidad, saldos y ubicación de
+                                insumos químicos.
+                            </p>
+                            <p>
+                                ▪ Transportar los insumos químicos según requerimiento bajo los controles de seguridad
+                                estipulados en el presente documento.
+                            </p>
+                            <p>
+                                ▪ Trasladar los residuos peligrosos hacia al almacén de desechos químicos.
+                            </p>
+                            <p>
+                                <strong>4.4.</strong>
+                                <strong>Responsable</strong>
+                                <strong>de</strong>
+                                <strong>seguridad</strong>
+                                <strong>y</strong>
+                                <strong>salud</strong>
+                                <strong>en</strong>
+                                <strong>el</strong>
+                                <strong>trabajo:</strong>
+                            </p>
+                            <p>
+                                ▪ Definir los controles apropiados para cada riesgo en los espacios donde se emplean
+                                insumos químicos.
+                            </p>
+                            <p>
+                                <s>
+                                    ▪
+                                </s> Coordinar el entrenamiento en manipulación de insumos químicos para todo el
+                                personal que tenga exposición a los mismos.
+                            </p>
+                            <p>
+                                ▪ Efectuar evaluaciones de almacenamiento de insumos químicos en los distintos ambientes
+                                donde se utilicen.
+                            </p>
+                            <p>
+                                <s>
+                                    ▪
+                                </s> Implementar un Plan de Respuesta a Emergencias para responder a situaciones
+                                ocasionadas por la manipulación de insumos químicos.
+                            </p>
+                            <p>
+                                <strong>4.5. Logística, Almacén:</strong>
+                            </p>
+                            <p>
+                                ▪ Gestionar la compra y transporte de insumos químicos solo con empresas autorizadas.
+                            </p>
+                            <p>
+                                ▪ Realizar la compra y solicitar a los proveedores la hoja de seguridad (MSDS) del
+                                insumo químico. Asimismo, exigir que estos seencuentren debidamente etiquetados y con
+                                fechas de vencimiento no menores a seis meses.
+                            </p>
+                            <p>
+                                ▪ Supervisar, controlar, inspeccionar y evaluar a los transportistas de insumos químicos
+                                para asegurar que cumplan con los requisitos de este procedimiento.
+                            </p>
+                            <p>
+                                ▪ Inspeccionar todos los insumos químicos para asegurar que sean entregados en
+                                recipientes apropiados.
+                            </p>
+                            <p>
+                                <strong>4.6.</strong>
+                                <strong>Alumnos,</strong>
+                                <strong>proveedores</strong>
+                                <strong>y</strong>
+                                <strong>visitantes:</strong>
+                            </p>
+                            <p>
+                                ▪ Conocer y cumplir con lo dispuesto en el presente documento.
+                            </p>
+                            <p>
+                                <strong>5.<u>DEFINICIONES</u></strong>
+                            </p>
+                            <p>
+                                ▪ <strong>HMIS:</strong> Por sus Siglas en Inglés: Hazardous Materials Identification
+                                System, “Sistema de Identificación del Material Peligroso”
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                ▪ <strong>Hoja</strong> <strong>de</strong> <strong>Seguridad</strong>
+                                <strong>(</strong><strong>MSDS):</strong> Documento que contiene instrucciones escritas
+                                relacionadas con materiales químicos y residuos peligrosos.
+                                Hoja de Seguridad de Datos / Productos (Material Safety Data Sheet).
+                            </p>
+                            <p>
+                                ▪ <strong>I</strong><strong>nventario</strong>
+                                <strong>de</strong><strong>Materiales</strong> <strong>Peligrosos</strong>
+                                <strong>(</strong><strong>MATPEL):</strong> Relación de insumos químicos utilizados y
+                                residuos peligrosos
+                                generados en UTEC.
+                            </p>
+                            <p>
+                                ▪ <strong>Materiales</strong> <strong>Peligrosos</strong>
+                                <strong>(</strong><strong>M</strong><strong>ATPEL):</strong> Aquellos que por sus
+                                características fisicoquímicas y/o biológicas o por el manejo al que son o van
+                                a ser sometidos, pueden generar o desprender polvos, humos, gases, líquidos, vapores o
+                                fibras infecciosas, irritantes, inflamables, explosivas, corrosivas, tóxicas o de otra
+                                naturaleza peligrosa o radiaciones ionizantes
+                                en cantidades que representan un riesgo significativo para la salud, el medio ambiente o
+                                a la propiedad.
+                            </p>
+                            <p>
+                                ▪ <strong>Peligro</strong> <strong>a</strong> <strong>la</strong>
+                                <strong>Salud:</strong> Indica el nivel de peligro a la salud, si hay contacto con el
+                                material.
+                            </p>
+                            <p>
+                                ▪ <strong>Peligro</strong> <strong>de</strong> <strong>Inflamabilidad:</strong> Indica
+                                algunos productos no pueden quemarse a temperatura ambiente, si se calientan pueden
+                                llegar a ser inflamables.
+                            </p>
+                            <p>
+                                ▪ <strong>Peligro</strong> <strong>Físico:</strong> Son las características de un
+                                producto que pueden hacerlo reaccionar.
+                            </p>
+                            <p>
+                                ▪ <strong>Número</strong> <strong>C</strong><strong>AS:</strong> Es el número único de
+                                identificación asignado a una sustancia química por el Servicio de Resúmenes Químicos
+                                (Chemical Abstracts Service). El número registrado
+                                CAS es una identificación numérica única para compuestos químicos, polímeros, secuencias
+                                biológicas, preparados y aleaciones. También llamado CAS RN (en castellano número de
+                                registro del CAS). Chemicals Abstracts Service
+                                (CAS), es una División de la Sociedad Química Americana, asigna estos identificadores
+                                cada uno compuesto químico que ha sido descrito en la literatura. La intención es
+                                realizar una búsqueda en la base de datos unificada,
+                                dado que a menudo se asignan distintos nombres para el mismo compuesto. Casi todas las
+                                moléculas actuales PERMITEN una búsqueda por el número CAS.
+                            </p>
+                            <p>
+                                ▪ <strong>Usuarios</strong> <strong>de</strong> <strong>l</strong>
+                                <strong>aboratorio:</strong> Toda persona o grupo de personas capacitadas para realizar
+                                actividades (trabajo, estudio, investigación u otros) con insumos
+                                químicos dentro de laboratorios o espacios afines.
+                            </p>
+                            <p>
+                                ▪ <strong>Comunidad</strong> <strong>universitaria:</strong> Grupo de personas integrada
+                                por alumnos, docentes y administrativos
+                            </p>
+                            <p>
+                                <strong>6.</strong>
+                                <strong><u>GENERALIDADES</u></strong>
+                            </p>
+                            <p>
+                                a) Los miembros de la comunidad universitaria, contratistas y visitantes que utilicen
+                                insumos químicos dentro de sus actividades, deberán emplear el equipo de protección
+                                personal (EPP) pertinente en buen estado, sugerido en la hoja de seguridad (MSDS).
+                            </p>
+                            <p>
+                                b) Todo el personal que trabaje con insumos químicos, debe tener acceso a las hojas de
+                                seguridad (MSDS).
+                            </p>
+                            <p>
+                                c) El inventario de insumos químicos deberá mantenerse siempre actualizado.
+                            </p>
+                            <p>
+                                d) Los sistemas de tuberías que contengan insumos químicos deben ser etiquetados
+                                utilizando leyendas o la codificación por colores proporcionada.
+                            </p>
+                            <p>
+                                e) No se permitirá la compra y uso de insumos químicos provenientes de empresas no
+                                autorizadas. f) Todo material peligroso (MATPEL) deberá ser llevado al almacén de
+                                desechos químicos ubicado
+                            </p>
+                            <p>
+                                en la zona de campamento colindante al campus universitario.
+                            </p>
+                            <p>
+                                g) Los usuarios de laboratorio de cada carrera quedarán definidos según la siguiente
+                                tabla:
+                            </p>
+                        </div>
+                        <br clear="all" />
+                        <div class="table-responsive">
+                            <table class="menor-font-size table table-bordered">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <td><strong>GRUPO DE USUARIOS</strong></td>
+                                        <td><strong>SUB-GRUPO DE USUARIOS</strong></td>
+                                        <td><strong>MIEMBROS</strong></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td width="94" rowspan="2" valign="top">
+                                            <p>
+                                                <strong>GRUPO A</strong>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                <strong>SUB-GRUPO A1</strong>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                Personal de laboratorio de la Carrera.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>SUB-GRUPO A2</strong>
+                                        </td>
+                                        <td>Profesores de la Carrera</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="94" rowspan="2" valign="top">
+                                            <p>
+                                                <strong>GRUPO E</strong>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                <strong>SUB-GRUPO E1</strong>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                Estudiantes de UTEC en clases acompañados por el responsable inmediato
+                                                (docente, asesor, asistente).
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                <strong>SUB-GRUPO E2</strong>
+                                            </p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                Estudiantes de UTEC trabajando en sus proyectos de VLI, tesis u otros
+                                                proyectos de tipo exploratorio.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                <strong>GRUPO P</strong>
+                                            </p>
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                Profesionales con vínculo legal con UTEC vigente y labores específicas
+                                                de laboratorio, quienes cuentan con autorización de la Dirección de la
+                                                Carrera.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                <strong>GRUPO S</strong>
+                                            </p>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <p>
+                                                Personal de soporte de UTEC (limpieza, seguridad, infraestructura, TI,
+                                                etc) con actividades conocidas por los usuarios del subgrupo A1.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>GRUPO V</strong></td>
+                                        <td></td>
+                                        <td>Visitantes externos</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>
+
+                            </p>
+                            <p>
+
+                            </p>
+                        </div>
+                        <br clear="all" />
+                        <div>
+                            <p>
+                                <strong>7. <u>DESARROLLO</u></strong>
+                            </p>
+                            <p>
+                                <strong>7.1. Compra de insumos químicos:</strong>
+                            </p>
+                            <p>
+                                a) Toda compra de insumo químico debe ser ejecutada através de un proveedor autorizado.
+                                b) En toda compra se deberá solicitar al proveedor la hoja de seguridad (MSDS) en
+                                español, la cual deberá seguir la norma ANSI Z400.1. Asimismo, deberá contener la
+                                siguiente
+                            </p>
+                            <p>
+                                información:
+                            </p>
+                            <p>
+                                - Identificación del insumo químico: Nombre, dirección y teléfonos de emergencias del
+                                fabricante.
+                            </p>
+                            <p>
+                                - Identificación química con número de CAS. - Potencial de fuego y explosión.
+                            </p>
+                            <p>
+                                - Primeros auxilios y tratamiento debido a intoxicación. Los datos de peligros a la
+                                salud, incluyendo los límites de exposición y síntomas; caminos críticos hacia el
+                                cuerpo.
+                            </p>
+                            <p>
+                                - Medidas en caso de incendio y derrames. - Almacenamiento y uso seguro.
+                            </p>
+                            <p>
+                                - Límites de exposición (por ejemplo, TLV, IDLH) y equipo de protección personal
+                                requeridos.
+                            </p>
+                            <p>
+                                - Propiedades físicas y químicas.
+                            </p>
+                            <p>
+                                - Datos de Estabilidad y Reactividad.
+                            </p>
+                            <p>
+                                - Información toxicológica, ecológica, y residuos peligrosos y prácticas de desecho. -
+                                Requerimientos de Transporte, normas aplicables e información adicional.
+                            </p>
+                            <p>
+                                c) Los envases destinados para el uso de insumos químicos de cualquier tipo, deberán
+                                estar etiquetados por el fabricante, vendedor autorizado. Asimismo, deberán indicar lo
+                                siguiente:
+                            </p>
+                            <p>
+                                - Identificación del insumo químico. - Identificación del fabricante.
+                            </p>
+                            <p>
+                                - Indicadores sobre peligros y riesgos. - Precauciones de seguridad y EPP.
+                            </p>
+                            <p>
+                                - Información en caso de emergencias.
+                            </p>
+                            <p>
+                                d) Antes de aceptar cualquier insumo químico para su almacenamiento, se debe verificar
+                                la integridad del envase. Cualquier recipiente dañado que comprometa la integridad del
+                                material, la seguridad de los trabajadores, y derrames/fugas potenciales, deben
+                                ser notificados y tratados inmediatamente con el embarcador y el distribuidor.
+                            </p>
+                            <p>
+                                e) El área de Almacén recepcionará, notificará y entregará el insumo químico al usuario
+                                solicitante para su recojo inmediato.
+                            </p>
+                            <p>
+                                f) Asimismo, el suministro e instalación de insumos químicos en presentación de balones
+                                se hará efectiva únicamente los días sábados donde hay menor afluencia de personas en la
+                                universidad y así evitar la mayor cantidad de exposición ante posibles eventos
+                                no deseados.
+                            </p>
+                            <p>
+
+                            </p>
+                            <p>
+
+                            </p>
+                        </div>
+                        <br clear="all" />
+                        <div>
+                            <p>
+                                <strong>7.2. Almacenamiento e inventario de insumos químicos:</strong>
+                            </p>
+                            <p>
+                                a) Los insumos químicos deben ser almacenados de acuerdo a la legislación peruana
+                                pertinente, guía de materiales peligrosos y otras regulaciones.
+                            </p>
+                            <p>
+                                b) Todas las áreas de almacenamiento deben estar claramente señalizadas con acceso
+                                restringido. Asimismo, deben proteger a los insumos químicos del clima, el calor o
+                                cualquier otro agente que pueda afectar su integridad.
+                            </p>
+                            <p>
+                                c) Todos los insumos químicos deben ser almacenados de acuerdo con sus características
+                                de compatibilidad y requisitos físicos (aislamiento, ventilación, condiciones
+                                climáticas, espaciado correcto, etc.).
+                            </p>
+                            <p>
+                                d) Para el caso de balones estos deberán estar sujetos a la estructura a través de
+                                cadenas a fin de evitar posibles caídas.
+                            </p>
+                            <p>
+                                e) Todos los insumos químicos deben ser etiquetados siguiendo el sistema HMIS y deben
+                                tener sus correspondientes hojas de seguridad en un lugar visible y accesible.
+                            </p>
+                            <p>
+                                f) Los insumos químicos incompatibles deberán ser separados como medida preventiva.
+                            </p>
+                            <p>
+                                g) El personal de laboratorio debe desarrollar un sistema de inventario para controlar
+                                todos los insumos químicos almacenados. Esto incluye su ubicación, cantidad, dónde y
+                                cuándo se usan.
+                            </p>
+                            <p>
+                                h) Se deberá desarrollar un sistema de rotación de stock para utilizar y almacenar todos
+                                los insumos químicos en base al principio: “primero en entrar, primero en salir”.
+                            </p>
+                            <p>
+                                i) Todo inventario de insumos químicos incluirá como mínimo lo siguiente: - Nombre
+                                químico y comercial.
+                            </p>
+                            <p>
+                                - Composición o principales componentes peligrosos con su número de CAS si el material
+                                no pudiera determinarse por el nombre químico.
+                            </p>
+                            <p>
+                                - Niveles de peligro, clasificación, cantidad y ubicación.
+                            </p>
+                            <p>
+                                - Se deberá mantener el etiquetado y colocar las placas de identificación apropiadamente
+                                a los insumos químicos siguiendo el criterio del Sistema de Identificación de insumos
+                                químicos (HMIS), del D.S. 021-2008-MTC.
+                            </p>
+                            <p>
+                                - Si se transfiere un insumo químico a un envase secundario, también deberán tener las
+                                etiquetas HMIS y/o placas de identificación adecuadas (DOT y UN) correspondientemente.
+                            </p>
+                            <p>
+                                <strong>7.3. Transporte de insumos químicos:</strong>
+                            </p>
+                            <p>
+                                a) Para el transporte de insumos químicos, se deberá considerar lo siguiente:
+                            </p>
+                            <p>
+                                - Transportarlos en recipientes debidamente rotulados, etiquetados y sellados.
+                            </p>
+                            <p>
+                                - Para el transporte a diversos pisos de la instalación, se deberá emplear únicamente el
+                                ascensor de carga (ascensor C de la torre 2).
+                            </p>
+                            <p>
+                                - No transportar los insumos químicos con las manos (cargarlos), utilizar los carritos
+                                de transporte para ello.
+                            </p>
+                            <p>
+                                b) Los carritos de transporte de insumos químicos deberá ser material resistente con
+                                separadores en cada plataforma, baranda en los bordes y con asa de desplazamiento.
+                            </p>
+                            <p>
+
+                            </p>
+                            <p>
+
+                            </p>
+                        </div>
+                        <br clear="all" />
+                        <div>
+                            <p>
+                                <strong>7.4.</strong>
+                                <strong>Manipulación</strong>
+                                <strong>y</strong>
+                                <strong>disposición</strong>
+                                <strong>final</strong>
+                                <strong>de</strong>
+                                <strong>insumos</strong>
+                                <strong>químicos:</strong>
+                            </p>
+                            <p>
+                                a) Para el uso de insumos químicos se deberá disponer obligatoriamente de ambientes
+                                idóneos y exclusivos (laboratorios químicos). No se permitirá realizar actividades con
+                                los mismos en otros espacios distintos de la instalación.
+                            </p>
+                            <p>
+                                b) El responsable de llevar a cabo la actividad, deberá brindar una charla previa de
+                                inducción a todo el personal involucrado dejando evidencia de la misma a través del
+                                llenado del registro: UTEC-SST-REG-018 “Registro de inducción, capacitación,
+                                entrenamiento
+                                y simulacro de emergencia” que se encuentra en el anexo 02 del presente documento.
+                            </p>
+                            <p>
+                                c) La manipulación de insumos químicos será bajo estricta supervisión del grupo A (tabla
+                                N°1). Asimismo, esta práctica deberá ser complementada con las recomendaciones de la
+                                hoja de seguridad (MSDS).
+                            </p>
+                            <p>
+                                d) Una vez terminada la manipulación del insumo químico deberá ser almacenado de la
+                                siguiente manera:
+                            </p>
+                            <p>
+                                - Se utilizará el etiquetado HMIS en cualquier envase que no brinde información.
+                            </p>
+                            <p>
+                                - La etiqueta deberá tener barras de colores, números y símbolos que informarán sobre
+                                los peligros de los productos químicos. Asimismo, deberá estar conformado de la
+                                siguiente manera:
+                            </p>
+                            <p>
+                                ✓ Barra azul (salud).
+                            </p>
+                            <p>
+                                ✓ Barra roja (inflamabilidad).
+                            </p>
+                            <p>
+                                ✓ Barra anaranjada (peligro físico). ✓ Barra blanca (EPP).
+                            </p>
+                            <p>
+                                (*) La barra azul cuenta con dos espacios, una para un asterisco (exposición a largo
+                                plazo del material) y otro para la clasificación del peligro.
+                            </p>
+                            <p>
+                                - Las barras azul, roja y anaranjada tendrán un número comprendido entre el cero y el
+                                cuatro, dependiendo del grado de peligro. Cero es el grado menos crítico.
+                            </p>
+                            <p>
+                                - La barra blancautilizará unsistema decodificación porletras paraespecificar el EPP
+                                apropiado para la manipulación del producto químico.
+                            </p>
+                            <p>
+                                e) Todo insumo químico luego de ser utilizado pasará a la condición de material
+                                peligroso (MATPEL).
+                            </p>
+                            <p>
+                                f) La disposición final para un MATPEL inicia en su contención a través de un recipiente
+                                a fin de evitar su fuga, bien sea por vertimiento o emisión.
+                            </p>
+                            <p>
+                                g) Estos serán identificados, etiquetados en un envase que permita su fácil transporte
+                                hacia el almacén de desechos químicos.
+                            </p>
+                            <p>
+                                h) Todo MATPEL deberá ser transportado al almacén desechos químicos ubicado en la zona
+                                de campamento colindante al campus universitario. Asimismo, este ambiente deberá cumplir
+                                con la normativa vigente relativa al almacenamiento de insumos químicos.
+                            </p>
+                            <p>
+                                i) De realizarse trasvase de MATPEL a contenedores, estos deberán realizarse con los
+                                equipos de protección personal obligatorios según la hoja de seguridad.
+                            </p>
+                            <p>
+
+                            </p>
+                            <p>
+
+                            </p>
+                        </div>
+                        <br clear="all" />
+                        <div>
+                            <p>
+                                <strong>7.5.</strong>
+                                <strong>Entrenamiento:</strong>
+                            </p>
+                            <p>
+                                a) El responsable de SeguridadySaluden el Trabajodeberá contemplardentrodel programa
+                                anual de capacitaciones temas relacionados a la manipulación, almacenamiento y
+                                transporte de insumos químicos a fin de que el personal que interaccione con ellos
+                                reciba
+                                entrenamiento y fortalezca sus competencias en lo siguiente:
+                            </p>
+                            <p>
+                                - Reconocimiento de peligros.
+                            </p>
+                            <p>
+                                - Cómo protegerse a sí mismos y manipular materiales peligrosos.
+                            </p>
+                            <p>
+                                - Cómo acceder y leer las hojas de seguridad (MSDS) de los insumos químicos. - Cómo leer
+                                una etiqueta y letrero.
+                            </p>
+                            <p>
+                                - Cómo usar el inventario o registro de sustancias
+                            </p>
+                            <p>
+                                - Cómo realizar una eliminación segura de insumos químicos. - Transporte y
+                                almacenamiento de los insumos químicos
+                            </p>
+                            <p>
+                                - Procedimientos para respuesta a emergencias ante accidentes y derrames. - Límites de
+                                exposición.
+                            </p>
+                            <p>
+                                - Equipo de Protección Personal requerido. - Tratamiento de primeros auxilios.
+                            </p>
+                            <p>
+                                <strong>8. <u>REGISTROS</u></strong>
+                            </p>
+                            <p>
+                                Ninguno.
+                            </p>
+                            <p>
+                                <strong>9.</strong>
+                                <strong><u>ANEXOS</u></strong>
+                            </p>
+                        </div>
+                        <div>
+                            <p class="text-center">
+                                <strong>Anexo 01:</strong> Cuadro de incompatibilidad de almacenamiento de residuos
+                                peligrosos.
+                            </p>
+                            <p class="text-center">
+                                <img class="img-fluid" width="606" height="700"
+                                    src="img/cuadro_resumen_de_incompatibilidades_de_almacanamiento_de_residuos_peligrosos.png" />
+
+                            </p>
+                            <p>
+
+                            </p>
+                        </div>
+                        <p class="text-center">
+                            <strong>Anexo 02:</strong> Registro de inducción, capacitación, entrenamiento y simulacro de
+                            emergencia
+                        </p>
+                        <p class="text-center">
+                            <img class="img-fluid" width="608" height="900"
+                                src="img/registro_de_induccion_capacitacion_entrenamiento_y_simulacro_de_emergencia.png" />
+                        </p>
+                    </div>
+                </div>
+                <div class="pie-modal bg-dark text-white">
+                    <div class="row">
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-sx-9"><label><input type="checkbox" id="conforme5"
+                                    disabled /> He leído y acepto los términos y condiciones descritos en el presente
+                                reglamento</label></div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-sx-3 text-center"><button id="btnGuardar5"
+                                type="button" class="btn btn-light" disabled>Guardar</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div class="modal fade" id="documento6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-primary">
+                    <div class="modal-title text-white" id="exampleModalLongTitle">
+                        <h2>¡Importante!</h2>
+                        <p class="h5">Es necesario leer el documento por completo para dar conformidad, una vez
+                            finalizado, marque la casilla y de click en Guardar.</p>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal-body-doc6">
+                    <!-- Todo el documento transformado en HTML -->
+                    <div class="text-justify" id="agreement6">
+                        <div>
+                            <div class="text-center">
+                                <h1>Reglamento de Seguridad para Trabajo en Laboratorios y Talleres</h1>
+                            </div>
+                            <p>
+                                <strong>1. ALCANCE</strong>
+                            </p>
+                            <p>
+                                Este reglamento es aplicable a todos los estudiantes que utilizan los laboratorios y
+                                talleres de UTEC, tanto para los que están en clases acompañados por el responsable del
+                                ambiente, como para los que estén trabajando en sus proyectos de PI, tesis u otros
+                                proyectos de tipo exploratorio.
+                            </p>
+                            <h1>
+                                2. DESARROLLO
+                            </h1>
+                            <p>
+                                <strong>2.1. </strong>
+                                <strong>Generalidades</strong>
+                            </p>
+                            <p>
+                                <strong>Art. N° 1: </strong> Está prohibido el ingreso de los alumnos a laboratorios y
+                                talleres de no encontrarse el personal responsable del mismo al interior. Estos
+                                ambientes deben permanecer cerrados mientras no exista
+                                una persona responsable de la supervisión del ambiente.
+                            </p>
+                            <p>
+                                <strong>Art. N° 2: </strong> Está prohibido el consumo de alimentos y/o bebidas al
+                                interior de laboratorios y talleres, salvo que lo hagan fuera de la zona de trabajo. Del
+                                mismo modo, se prohíbe fumar dentro de la instalación.
+                            </p>
+                            <p>
+                                <strong>Art. N° 3: </strong> Todo alumno deberá recibir una charla de inducción de
+                                seguridad sobre el uso del laboratorio o actividades a realizar en el taller el primer
+                                día de clases de cada ciclo, la misma que deberá
+                                quedar registrada a través del formato de inducción de seguridad.
+                            </p>
+                            <p>
+                                Art N°4: Todo alumno deberá utilizar los equipos de protección personal necesarios y
+                                adecuados para la actividad que esté realizando.
+                            </p>
+                            <p>
+                                <strong>Art. N° 5: </strong> Todo alumno y/o personal responsable que se encuentre
+                                dentro del laboratorio o taller, debe identificar y conocer la ubicación de los
+                                elementos y dispositivos de seguridad como las rutas de
+                                evacuación, estaciones manuales, extintor, el cual solo será manipulado por el
+                                responsable del laboratorio o taller. Así también, deberá conocer la ubicación de las
+                                duchas de emergencia, lava ojos y botiquín de primeros
+                                auxilios, para ser utilizados en caso se requiera.
+                            </p>
+                            <p>
+                                <strong>Art. N° 6: </strong> Está prohibido hacer uso inadecuado de las instalaciones,
+                                mobiliario y equipos en general. El alumno será responsable de los daños que pudiera
+                                realizar a los mismos.
+                            </p>
+                            <p>
+                                <strong>Art. N° 7: </strong> Está prohibido utilizar los equipos o herramientas sin
+                                conocer su funcionamiento. El alumno debe seguir las instrucciones dadas por el
+                                responsable del laboratorio o taller, ya sea si está bajo
+                                supervisión presencial o parcial, estando terminantemente prohibido el uso indebido de
+                                los equipos de la universidad.
+                            </p>
+                            <p>
+                                <strong>Art. N° 8: </strong> Los alumnos deben revisar las condiciones del equipo y/o
+                                instrumentos a utilizar; en caso observen fallas o daños, deberán ser reportadas a su
+                                supervisor y al responsable inmediato.
+                            </p>
+                            <p>
+                                <strong>Art. N° 9: </strong> Está prohibido manipular las válvulas de línea de gas
+                                natural existente sin la autorización del responsable del laboratorio o taller. De
+                                observar que se encuentran en una posición incorrecta
+                                a la señalada por la misma (abierta o cerrada), el alumno debe comunicar al responsable
+                                del ambiente inmediatamente.
+                            </p>
+                            <p>
+                                <strong>Art. N° 10: </strong> La conexión de equipos personales y ajenos al laboratorio
+                                o taller, tales como celulares, tablets o laptops, requiere de la aprobación del
+                                responsable del laboratorio o taller.
+                            </p>
+                        </div>
+                        <br clear="all" />
+                        <div>
+                            <p>
+                                <strong>Art. N° 11: </strong> Es deber de todos los alumnos mantener el orden y la
+                                limpieza del lugar de trabajo, de los materiales y equipos utilizados incluso luego de
+                                la realización de sus trabajos, independientemente
+                                del estado inicial encontrado y de quien haya sido responsable por el desorden o
+                                suciedad. El tiempo de organización y limpieza integral debe estar contemplado
+                                formalmente en las actividades que se lleven a cabo. El incumplimiento
+                                a estos lineamientos es motivo de sanción individual y/o colectiva tanto a los usuarios
+                                como a sus supervisores.
+                            </p>
+                            <p>
+                                <strong>Art. N° 12: </strong> Durante el tiempo de permanencia en el laboratorio o
+                                taller, las puertas de evacuación deben permanecer libres de obstáculos.
+                            </p>
+                            <p>
+                                <strong>Art. N° 13: </strong> Las acciones de respuesta ante incidentes y accidentes
+                                serán llevadas a cabo instantáneamente por personal habilitado de UTEC y deben estar
+                                conformes a los procedimientos adoptados por UTEC.
+                            </p>
+                            <p>
+                                <strong>Art. N° 14: </strong> Todo incidente o accidente debe ser inmediatamente
+                                reportado por escrito por la persona afectada y/o su supervisor al coordinador de
+                                laboratorios, al coordinador de la carrera y al director
+                                de la carrera quien a su vez compartirá dicha información al área de seguridad. Lo mismo
+                                aplica a incidentes o accidentes con materiales, equipos, infraestructura y/o productos
+                                químicos.
+                            </p>
+                            <p>
+                                <strong>Art. N° 15: </strong> En el caso que algún alumno haya roto algún material, se
+                                deberá informar al responsable del laboratorio acerca del incidente. Este último le hará
+                                firmar la hoja de compromiso con sus datos
+                                personales y, a fin de mes, se le emitirá una boleta de pago detallando el costo del
+                                material dañado.
+                            </p>
+                            <p>
+                                <strong>Art. N° 16: </strong> La supervisión puede ser de dos tipos: presencial o
+                                parcial. El tipo presencial es para estudiantes de UTEC que se encuentren en clases
+                                acompañados por el responsable de la sección, mientras
+                                que el tipo parcial comprende a los estudiantes de UTEC trabajando en proyectos PI,
+                                tesis u otros proyectos de tipo exploratorio. La supervisión de tipo presencial es
+                                constante e <em>in situ </em>y está a cargo del responsable
+                                de la sección. La supervisión parcial, ya sea por el personal del laboratorio o del
+                                profesor a cargo, debe darse en tantos intervalos de tiempo cuantos sean necesarios para
+                                asegurar una comprensión real del avance de los
+                                trabajos y del respeto al reglamento, y ocurre, como mínimo, al inicio y al cierre de la
+                                actividad.
+                            </p>
+                            <p>
+                                <strong>Art. N° 17: </strong> El responsable del laboratorio tiene la potestad de
+                                impedir comportamientos en el laboratorio que considere inapropiados (por ejemplo, jugar
+                                o correr) o que infrinjan los reglamentos.
+                            </p>
+                            <p>
+                                <strong>Art. N° 18: </strong> Queda prohibido el traslado de equipos y materiales a
+                                otros laboratorios sin conocimiento previo de sus responsables.
+                            </p>
+                            <h1>
+                                2.2. Laboratorios de Ingeniería Química, Bioingeniería y Centros de Investigación
+                            </h1>
+                            <p>
+                                <strong>Art. N° 19: </strong> Ningún alumno está autorizado a utilizar materiales de
+                                laboratorio o reactivos que no conozca, para lo cual no esté capacitado o no cuente con
+                                los equipos de protección personal y otros dispositivos
+                                de seguridad requeridos.
+                            </p>
+                            <p>
+                                <strong>Art. N° 20: </strong> El responsable de la actividad (profesor, coordinador,
+                                asistente u otro) es formalmente responsable de instruir previamente a todos los alumnos
+                                a su cargo acerca de los riesgos y medidas de
+                                seguridad asociadas.
+                            </p>
+                        </div>
+                        <br clear="all" />
+                        <div>
+                            <p>
+                                <strong>Art. N° 21: </strong> Son medidas de seguridad personal mínimas obligatorias
+                                para cualquier tipo de trabajo experimental el uso de pantalones largos, zapatos
+                                cerrados, guantes, lentes de seguridad (adicional o en
+                                reemplazo a los que usen de medida), mandil, y cabello recogido. Estos elementos son
+                                personales. Estas indicaciones no aplican en caso de clases teóricas o reuniones que se
+                                realicen dentro de algún laboratorio.
+                            </p>
+                            <p>
+                                <strong>Art. N° 22: </strong> El uso de guantes es obligatorio para todos los trabajos
+                                que empleen agentes químicos o biológicos que, según su hoja de seguridad, presenten
+                                algún tipo de riesgo cuando entran en contacto
+                                con la piel, o que se realicen en laboratorios donde se manipulen agentes químicos o
+                                biológicos. Lo mismo aplica cuando se trabaja con sustancias o mezclas de composición
+                                desconocida.
+                            </p>
+                            <p>
+                                <strong>Art. N° 23: </strong> Botas de seguridad son requeridas para los trabajos con
+                                plantas piloto o en ambientes donde se realicen ensayos o se utilicen equipos o
+                                materiales pesados.
+                            </p>
+                            <p>
+                                <strong>Art. N° 24: </strong> Otros equipos especiales de protección personal pueden ser
+                                necesarios y deben ser evaluados caso por caso (mascaras contra polvos o contra humos,
+                                protector facial, ropa de protección química,
+                                botas de seguridad con certificación especial, etc.).
+                            </p>
+                            <p>
+                                <strong>Art. N° 25: </strong> Está prohibido la realización y/o acompañamiento de
+                                trabajos de laboratorio usando sandalias, calzado que dejen expuestas cualquier parte de
+                                los pies (incluyendo ballerinas), zapatos de taco
+                                alto, pantalón corto, falda, vestido y cabello suelto. No es recomendado el uso de
+                                lentes de contacto en los laboratorios y se prohíbe su uso mientras se esté trabajando
+                                con reactivos.
+                            </p>
+                            <p>
+                                <strong>Art. N° 26: </strong> Está prohibido el uso de pulseras, collares y/o relojes
+                                colgantes al trabajar con equipos o herramientas (manuales o eléctricas) con partes
+                                rotatorias, entre ellos el secador de bandejas, la
+                                planta piloto de ósmosis inversa, la planta piloto de reacción, la planta piloto de
+                                agitación, equipos de corte entre otros.
+                            </p>
+                            <p>
+                                <strong>Art. N° 27: </strong> En el caso de trabajos con agentes químicos y biológicos,
+                                las hojas de seguridad son un documento fundamental para la identificación de peligros y
+                                definición de acciones. Dichas hojas de seguridad
+                                (MSDS) se encuentran disponibles en cada uno de los laboratorios, sobre los escritorios
+                                de los docentes.
+                            </p>
+                            <p>
+                                <strong>Art. N° 28: </strong> En el caso que cualquier alumno tenga que almacenar algún
+                                producto sea en el refrigerador o bajo campana, deberá él o su supervisor avisar por
+                                correo al responsable del laboratorio, mencionando
+                                las condiciones de refrigeración, la fecha final de almacenamiento; además el producto
+                                debe estar bien rotulado, indicando nombre del usuario, actividad realizada y fecha. En
+                                caso se encuentren en el laboratorio productos
+                                sin identificación, podrán ser eliminados sin aviso previo.
+                            </p>
+                            <p>
+                                <strong>Art. N° 29: </strong> La manipulación y el desecho de los residuos químicos y/o
+                                biológicos debe ser supervisado en todo momento por el responsable del laboratorio
+                                conforme el procedimiento específico. Para residuos
+                                biológicos diferentes a productos vegetales incluyendo cultivos de bacterias, hongos,
+                                muestras de sangre o tejidos animales, el supervisor del laboratorio deberá colocarlos
+                                en recipientes adecuados para autoclavarlos apropiadamente
+                                y de esta manera disponerlos como desperdicio común. Para material punzo cortante, los
+                                laboratorios dispondrán de recipientes adecuados los cuales son almacenados para su
+                                posterior eliminación.
+                            </p>
+                        </div>
+                        <br clear="all" />
+                        <div>
+                            <h1>
+                                2.3. Otros Laboratorios, Talleres (UTEC Garage, PI, otros)
+                            </h1>
+                            <p>
+                                <strong>Art. N° 30: </strong> Antes de iniciar cualquier proyecto que implique el uso de
+                                máquinas y/o herramientas se deberá pasar por registro y solicitar autorización al
+                                responsable del laboratorio o taller.
+                            </p>
+                            <p>
+                                <strong>Art. N° 31: </strong> Se deberá identificar las señales de seguridad y el
+                                equipamiento para casos de emergencias (extintores, alarmas, rutas de evacuación).
+                            </p>
+                            <p>
+                                <strong>Art. N° 32: </strong> El encargado del laboratorio o taller deberá aprobar las
+                                herramientas y EPP adecuados al proyecto a ejecutar.
+                            </p>
+                            <p>
+                                <strong>Art. N° 33: </strong> Se verificará que el área de trabajo, equipos,
+                                herramientas y EPP se encuentren en buen estado. Todo equipo no necesario deberá quedar
+                                almacenado en los gabinetes.
+                            </p>
+                            <p>
+                                <strong>Art. N° 34: </strong> El préstamo de máquinas y herramientas es personal. No
+                                deberán ser prestadas entre estudiantes.
+                            </p>
+                            <p>
+                                <strong>Art. N° 35: </strong> Se deberá usar adecuadamente los equipos y herramientas
+                                según las instrucciones del responsable del laboratorio o taller.
+                            </p>
+                            <p>
+                                <strong>Art. N° 36: </strong> Si no hay seguridad sobre el uso del equipo y/o
+                                herramienta, se deberá consultar al responsable del laboratorio o taller.
+                            </p>
+                            <p>
+                                <strong>Art. N° 37: </strong> Cada vez que se requiera cambiar de tarea, se deberá
+                                avisar al responsable del laboratorio o taller.
+                            </p>
+                            <p>
+                                <strong>Art. N° 38: </strong> No está permitido llevar el pelo suelto, accesorios o ropa
+                                suelta que pueda quedar atrapada en equipos en movimiento.
+                            </p>
+                            <p>
+                                <strong>Art. N° 39: </strong> Está terminantemente prohibido cambiar accesorios a las
+                                máquinas y/o herramientas sin informar al responsable del laboratorio o taller, tales
+                                como discos de amoladora, esmeril, brocas, etc.
+                            </p>
+                            <p>
+                                <strong>Art. N° 40: </strong> Está prohibido hacer bromas pesadas tales como empujarse,
+                                tirarse o arrancarse cosas, correr, perseguirse, hacer mímica de golpearse o tirarse
+                                cosas, pues esto puede ser el desencadenante de
+                                riesgos mayores. Asimismo, está prohibido gritar por lo que es recomendable acercarse al
+                                receptor de la comunicación y hablar a nivel calmo y controlado.
+                            </p>
+                            <p>
+                                <strong>Art. N° 41: </strong> Está prohibido ingresar en short, falda, sandalias y ropa
+                                inapropiada para el trabajo con herramientas.
+                            </p>
+                            <p>
+                                <strong>Art. N° 42: </strong> Al finalizar el trabajo se informará al responsable del
+                                laboratorio o taller.
+                            </p>
+                            <p>
+                                *
+                            </p>
+                            <h1>
+                                3. INFRACCIONES
+                            </h1>
+                            <p>
+                                <strong>Art. N° 43: </strong> Las infracciones al reglamento de laboratorios y talleres
+                                son sancionadas de acuerdo a 3 niveles: sanción leve, sanción grave y sanción muy grave.
+                                Estas sanciones pueden ser aplicadas de forma
+                                individual o colectiva según considere apropiado la persona responsable por la
+                                aplicación de la sanción.
+                            </p>
+                            <p>
+                                <strong>Art. N° 44: </strong> Para el caso de estudiantes, las sanciones leves incluyen
+                                la interrupción segura de los trabajos y el retiro de la persona del ambiente de
+                                trabajo/clase. La aplicación de este tipo de sanción
+                                está circunscrita a la ocasión específica en la que ocurra la infracción. Las sanciones
+                                leves deben ser comunicadas el mismo día, por correo, por el responsable directo del
+                                estudiante a la coordinación de laboratorios y
+                                a la coordinación de la carrera.
+                            </p>
+                        </div>
+                        <br clear="all" />
+                        <div>
+                            <p>
+                                <strong>Art. N° 45: </strong> Las sanciones graves pueden incluir la suspensión de
+                                actividades por un periodo de tiempo delimitado. Las sanciones muy graves pueden incluir
+                                el cese de actividades de la persona.
+                            </p>
+                            <p>
+                                <strong>Art. N° 46: </strong> El reincidir en un acto que conlleve a una sanción leve es
+                                causal para la aplicación de una sanción grave. Si vuelve a cometer el acto causal será
+                                considerado una sanción muy grave.
+                            </p>
+                            <p>
+                                <strong>Art. N° 47: </strong> El reporte de infracciones es responsabilidad de todos.
+                                Aquella persona que, habiendo presenciado una infracción, se omita de notificarla, podrá
+                                recibir una sanción.
+                            </p>
+                            <p>
+                                <strong>Art. N° 48: </strong> Una sanción de nivel superior puede ser aplicada
+                                directamente, aunque sanciones de nivel inferior no hayan sido aplicadas anteriormente.
+                            </p>
+                            <p>
+                                <strong>Art. N° 49: </strong> Las sanciones aplicadas por infracción al presente
+                                reglamento no excluyen la aplicación de otras sanciones previstas en los otros
+                                reglamentos de UTEC.
+                            </p>
+                            <h1>
+                                4. ANEXOS
+                            </h1>
+                            <p>
+                                <strong>Anexo 01: </strong> Hoja de compromiso por daños.
+                            </p>
+                            <p>
+                                <strong>Anexo 02: </strong> Registro de inducción de seguridad.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 align="center">
+                                <b>Anexo 01: Hoja de compromiso por daños</b>
+                            </h4>
+                            <div class="border container text-center">
+                                <p align="center">
+                                    <strong>RESPONSABILIDAD POR DAÑOS A LABORATORIO</strong>
+                                </p>
+                                <p class="text-justify">
+                                    Yo, ……………………………………………………………………… identificado con DNI: ……………………… y código
+                                    universitario: ……………………………, me comprometo a asumir el costo íntegro del material
+                                    dañado durante la clase de laboratorio del día:……………………….. y hora:………………… del curso:
+                                    …………………………………………………………
+                                    a cargo del profesor: …………………………………………, cuyas especificaciones se encuentran en
+                                    documento anexo al presente documento. Asimismo, autorizo a la Universidad de
+                                    Ingeniería y Tecnología - UTEC que genere una boleta de pago
+                                    con el costo del material.
+                                </p>
+                                <p class="text-left">
+                                    Sin otro particular. Atentamente,
+                                </p>
+                                <p class="text-left">
+                                    -------------------------------------------------------------------
+                                </p>
+                                <p class="text-left">
+                                    Nombre:
+                                </p>
+                                <p class="text-left">
+                                    DNI/CE:
+                                </p>
+                                <p class="text-left">
+                                    En caso ser menor de edad:
+                                </p>
+                                <p class="text-left">
+                                    -------------------------------------------------------------------
+                                </p>
+                                <p class="text-left">
+                                    Nombre del padre:
+                                </p>
+                                <p class="text-left">
+                                    DNI/CE:
+                                </p>
+                                <p class="text-center">
+                                    Barranco, ………………. de............................................... del 20……
+                                </p>
+                            </div>
+                            <br>
+                            <h4 align="center">
+                                Anexo 02: Registro de inducción de seguridad
+                            </h4>
+                            <p class="text-center">
+                                <img class="img-fluid" width="591" height="651"
+                                    src="img/registrodeinducciondeseguridad.png" />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pie-modal bg-dark text-white">
+                    <div class="row">
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-sx-9"><label><input type="checkbox" id="conforme6"
+                                    disabled /> He leído y acepto los términos y condiciones descritos en el presente
+                                reglamento</label></div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-sx-3 text-center"><button id="btnGuardar6"
+                                type="button" class="btn btn-light" disabled>Guardar</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Conformidad Covid -->
+    <div class="modal fade" id="conformidad-covid" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-primary">
+                    <div class="modal-title text-white" id="exampleModalLongTitle">
+                        <h2>¡Importante!</h2>
+                        <p class="h5">Es necesario llenar los campos correctamente y leer el documento por completo para dar conformidad, una vez
+                            finalizado, marque la casilla y de click en Guardar.</p>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal-body-doc-covid">
+                    <!-- Todo el documento transformado en HTML -->
+                    <div class="text-justify" id="agreement-covid">
+                        
+                       <p class="text-right mt-3">Barranco, <span id="dia-actual"></span> de <span id="mes-actual"></span> del <span id="year-actual"></span> </p>
+
+
+                       <h2 class="text-center mt-5">CARTA DE COMPROMISO DE ESTUDIANTE DE UTEC</h2>
+
+                       <p class="mt-4" >Por medio de la presente, yo <input id="nombre-completo-dcovid" style="color: #00bfdf;width: 40%; border: 1px solid #ced4da; border-radius: .25rem;" type="text" placeholder="Ingrese su nombre completo"> , identificado
+                       con Documento de Identidad N° <input id="dni-dcovid" maxlength="8" type="text" style="color: #00bfdf; width: 30%; border: 1px solid #ced4da; border-radius: .25rem;" placeholder="Ingrese su DNI"> y código
+                       
+                       <input maxlength="9" id="codigo-alumno-dcovid" type="text" style="color: #00bfdf;width: 30%;border: 1px solid #ced4da; border-radius: .25rem;" placeholder="Ingrese su Codigo"> , declaro conocer todas las normas, planes, políticas
+                    
+                       y procedimientos establecidos por UTEC durante mi permanencia en el campus 
+                       mientras dure la pandemia COVID-19 (en adelante, “Políticas UTEC”) 
+                       y me obligo a respetarlas y cumplirlas, así como a adoptar
+                       todas las medidas de prevención necesarias para proteger mi 
+                       salud e integridad física y la de la comunidad universitaria UTEC.
+                       </p>
+                       <p>
+                       En consecuencia, acepto el presente documento en señal de conformidad y asumo 
+                       las responsabilidades que de él se deriven, incluyendo el inicio de un
+                       procedimiento disciplinario en caso de no cumplir con las Políticas UTEC. </p>
+
+                        
+                    </div>
+                </div>
+                <div class="pie-modal bg-dark text-white">
+                    <div class="row">
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-sx-9"><label><input type="checkbox" id="conforme-doc-covid"
+                                     /> He leído, llenado mis datos y acepto el presente documento en señal de conformidad</label></div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-sx-3 text-center"><button id="btnGuardarDocCovid"
+                                type="button" class="btn btn-light" disabled>Guardar</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formulario del Contacto de Emergencia-->
+    <div class="modal fade" id="modal-formulario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="exampleModalLongTitle">
+                        Por favor registra la información de un contacto de emergencia.
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true ">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal-body-doc4">
+                    <form id="formulario" autocomplete="off">
+                        <div class="form-group">
+                            <label for="correo-contact">Correo del contacto de emergencia</label>
+                            <span id="error_email" class="text-danger error-span"></span>
+                            <input type="email" class="form-control" id="correo-contact" required autocomplete="off" />
+                        </div>
+                        <div class="form-group">
+                            <label for="nombres-apellidos">Nombres y Apellidos del contacto de emergencia</label>
+                            <span id="error_fullname" class="text-danger error-span"></span>
+                            <input type="text" class="form-control" id="nombres-apellidos" required
+                                autocomplete="off" />
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono del contacto de emergencia</label>
+                            <span id="error_telefono" class="text-danger error-span"></span>
+                            <input type="number" maxlength="9" class="form-control" id="telefono" required
+                                autocomplete="off" />
+                        </div>
+                        <div class="form-group ">
+                            <label for="periodo ">Periodo</label>
+                            <input type="text" class="form-control" id="periodo" readonly value="2020-1" required
+                                autocomplete="off" />
+                        </div>
+                        <div class="form-group text-center">
+                            <button id="btnGuardarContactEmer" type="button" class="btn btn-enviar">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-success text-center">
+                    <h5 class="modal-title text-white" id="exampleModalCenterTitle">Los datos del contacto de emergencia
+                        fueron guardados con exito.</h5>
+                </div>
+                <div class="modal-footer successBtn">
+                    <button type="button" class="btn btn-enviar" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="text/javascript " src="https://code.jquery.com/jquery-3.4.1.min.js "></script>
+    <script type="text/javascript " src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "></script>
+</body>
+
+</html>

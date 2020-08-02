@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+body {
+    font-family: 'Rubik', sans-serif;
+    counter-reset: Serial;
+}
+
+tr td:first-child:before {
+    counter-increment: Serial;
+    content: counter(Serial);
+}
+
+.bg-primary{
+    background-color: #00bfdf !important;
+}
+
+.text-primary{
+    color: #00bfdf !important;
+}
+
+.text-dark{
+    /* color: #1c1e1f !important; */
+    color: #00bfdf !important;
+}
+
+.text-header{
+    color: #1c1e1f !important;
+}
+
+.btn-primary{
+    color: #00bfdf !important;
+}
+
+.modal-header {
+    height: 95px;
+    padding: .5rem .5rem;
+}
+
+.modal-header h2 {
+    font-size: 24px;
+}
+
+.modal-header p {
+    font-size: 17px;
+}
+
+.modal-body {
+    height: 538px;
+    overflow: auto;
+}
+
+.modal-body h1 {
+    font-size: 20px;
+}
+
+#principal {
+    margin-top: 100px;
+}
+
+.modal-lg {
+    max-width: 80%;
+}
+
+.pie-modal {
+    width: 100%;
+    height: 51px;
+}
+
+.pie-modal label {
+    padding-top: 15px;
+    padding-left: 29px;
+    color: white;
+    font-size: 15px;
+}
+
+.pie-modal button {
+    font-size: 15px;
+}
+
+.pie-modal .col-lg-3 {
+    padding-top: 7px;
+}
+
+#modal-formulario .modal-body {
+    height: 435px;
+}
+
+#modal-formulario .modal-lg {
+    width: 40%;
+}
+
+.error-span{
+    float: right;
+}
+
+.successBtn{
+    place-content: center;
+}
+
+.advertencia{
+    font-size: 13px;
+}
+
+.btn-enviar{
+    background-color: #4dc0df;
+    color: white;
+}
+
+#modal-body-doc-covid{
+    margin: 0px 170px;
+}
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<Respondive Media Queries>>>>>>>>>>>>>>>>>>>>>>>  */
+
+@media (min-width: 1537px) and (max-width: 1920px) {
+    .modal-lg {
+        max-width: 80%;
+    }
+    .modal-title h2 {
+        font-size: 20px;
+    }
+    .modal-title p {
+        font-size: 15px;
+    }
+    .modal-header {
+        height: 75px;
+    }
+    .modal-body {
+        height: 726px;
+        overflow: auto;
+    }
+    #modal-body-doc-covid{
+        margin: 0px 450px;
+    }
+    .pie-modal label {
+        font-size: 16px;
+    }
+    .pie-modal button {
+        font-size: 16px;
+    }
+    #modal-formulario .modal-lg {
+        width: 40%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .modal-lg {
+        max-width: 80%;
+    }
+    .modal-title h2 {
+        font-size: 20px;
+    }
+    .modal-title p {
+        font-size: 15px;
+    }
+    .modal-header {
+        height: 95px;
+    }
+    .modal-body {
+        height: 550px;
+        overflow: auto;
+    }
+    #modal-body-doc-covid{
+        margin: 0px 80px;
+    }
+    .pie-modal label {
+        padding-top: 16px;
+        padding-left: 20px;
+        font-size: 14px;
+    }
+    .pie-modal button {
+        font-size: 16px;
+    }
+    #modal-formulario .modal-lg {
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .modal-title h2 {
+        font-size: 20px;
+    }
+    .modal-title p {
+        font-size: 15px;
+    }
+    .modal-header {
+        height: 95px;
+    }
+    .modal-body {
+        height: 550px;
+        overflow: auto;
+    }
+    #modal-body-doc-covid{
+        margin: 0px 110px;
+    }
+    .pie-modal label {
+        padding-top: 16px;
+        padding-left: 20px;
+        font-size: 14px;
+    }
+    .pie-modal button {
+        font-size: 16px;
+    }
+    #modal-formulario .modal-lg {
+        width: 80%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .modal-title h2 {
+        font-size: 20px;
+    }
+    .modal-title p {
+        font-size: 15px;
+    }
+    .modal-header {
+        height: 100px;
+    }
+    .modal-body {
+        height: 550px;
+        overflow: auto;
+    }
+    #modal-body-doc-covid{
+        margin: 0px 45px;
+    }
+    #modal-body-doc-covid p{
+        font-size: 13px;
+    }    
+    .pie-modal label {
+        padding-top: 5px;
+        padding-left: 20px;
+        font-size: 14px;
+    }
+    .pie-modal button {
+        font-size: 16px;
+    }
+    #modal-formulario .modal-lg {
+        width: 80%;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 540px) {
+    .modal-lg {
+        max-width: 100%;
+    }
+    .modal-header {
+        height: 135px;
+    }
+    .modal-title h2,
+    .modal-title p {
+        font-size: 15px;
+    }
+    .modal-body {
+        height: 380px;
+        overflow: auto;
+    }
+    #modal-body-doc-covid{
+        margin: 0px 0px;
+    }
+
+    #modal-body-doc-covid p{
+        font-size: 12px;
+    }
+    #modal-body-doc-covid h2{
+        font-size: 1rem;
+    }
+    .modal-body h1 {
+        font-size: 20px;
+    }
+    .menor-font-size {
+        font-size: 12px;
+    }
+    .pie-modal {
+        height: 102px;
+    }
+    .pie-modal label {
+        padding-top: 10px;
+        padding-left: 10px;
+        font-size: 14px;
+    }
+    .pie-modal button {
+        font-size: 12px;
+    }
+    .pie-modal .col-lg-3 {
+        padding-top: 0px;
+    }
+    #modal-formulario .modal-lg {
+        width: 95%;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 812px) {
+    .modal-lg {
+        max-width: 100%;
+    }
+    #modal-formulario .modal-lg {
+        width: 95%;
+    }
+}

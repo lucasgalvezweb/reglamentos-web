@@ -1,0 +1,58 @@
+{
+  "server": {
+    "security": {
+      "enable": true,
+      "npmModule": {
+        "name": "horus-web-security"
+      },
+      "configModule": {
+        "horusBaseUrl": "${HORUS_BASE_URL}",
+        "horusOptions": {
+          "authenticate": {
+            "grantType": "client_google_auth_code",
+            "clientType": "GOOGLE_LOGIN",
+            "clientId": "${HORUS_CLIENT_ID}",
+            "applicationId": "${HORUS_APPLICATION_ID}"
+          }
+        },
+        "defaultBussinessUnit": "${DEFAULT_BUSSINESS_UNIT}",
+        "overrideResponse": false,
+        "menuIcons": {
+          "docentes-web-inicio": "home",
+          "docentes-web-miscursos": "file-search",
+          "docentes-web-informacionalumno": "user-desk-1",
+          "docentes-web-informaciondocente": "user-desk-2",
+          "docentes-web-mispendientes": "pending-list",
+          "docentes-web-reportes": "open-link",
+          "docentes-web-consultas": "open-link",
+          "docentes-web-tramites": "open-link",
+          "docentes-web-matricula": "open-link",
+          "docentes-web-asistenciadocente": "open-link"
+        },
+        "express": {
+          "defaultSuccessLoginRoute": "/",
+          "callbackRoute": "/oauth/callback",
+          "failureRedirectRoute": "/error"
+        },
+        "dependencies": {
+          "coreEduUrl": "${CORE_EDU_URL}",
+          "solicitudUrl": "${SOLICITUD_URL}",
+          "asistenciaUrl": "${ASISTENCIA_URL}"
+        },
+        "regexPattern": "${VAR_REPLACE_REGEX_PATTERN}"
+      }
+    },
+    "maxTimeSession": "${MAX_TIME_SESSION}",
+    "logout": "/logout"
+  },
+  "frontend": {
+    "reglamentosApi": {
+      "baseUrl": "${REGLAMENTOS_API_BASE_URL}"
+    }
+  },
+  "endpoints": {
+    "settings": {
+      "httpResponseHeaderNamePrefix": "UTEC"
+    }
+  }
+}
